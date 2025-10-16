@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,171 +32,230 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">
+    <div class="docs-layout">
+        <!-- Header -->
+        <header class="docs-header">
+            <button class="mobile-menu-btn">☰</button>
+            <a href="/" class="logo">
                 <img src="assets/babelfish.svg" alt="Babelfish Logo">
-                Babelfish
+                Babelfish Docs
             </a>
-            <ul class="nav-links">
-                <li><a href="getting-started/overview">Getting Started</a></li>
-                <li><a href="token/overview">Token</a></li>
-                <li><a href="developers/api">Developers</a></li>
+            <button class="theme-toggle">🌙 Dark</button>
+        </header>
+
+        <!-- Sidebar -->
+        <nav class="docs-sidebar">
+            <h3>Getting Started</h3>
+            <ul>
+                <li><a href="getting-started/overview">Overview</a></li>
+                <li><a href="getting-started/signup">Sign Up</a></li>
+                <li><a href="getting-started/faq">FAQ</a></li>
+            </ul>
+
+            <h3>Token</h3>
+            <ul>
+                <li><a href="token/overview">Overview</a></li>
+                <li><a href="token/tokenomics">Tokenomics</a></li>
+            </ul>
+
+            <h3>Developers</h3>
+            <ul>
+                <li><a href="developers/api">API Reference</a></li>
+            </ul>
+
+            <h3>Resources</h3>
+            <ul>
                 <li><a href="roadmap/overview">Roadmap</a></li>
                 <li><a href="use-cases/business">Use Cases</a></li>
                 <li><a href="about/mission">About</a></li>
             </ul>
-            <button class="theme-toggle">🌙 Dark</button>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <img src="assets/babelfish.svg" alt="Babelfish Logo" class="hero-logo">
-            <h1>Babelfish</h1>
-            <p>Connect across distance, language, and culture</p>
-            <p>Universal communication platform that dissolves Earth's linguistic barriers and prepares for interplanetary connectivity through AI-powered translations, decentralized identities, and blockchain governance.</p>
-            
-            <div style="margin-top: 2rem;">
-                <a href="getting-started/overview" class="btn btn-primary">Get Started</a>
-                <a href="token/overview" class="btn btn-secondary">Explore Token</a>
-                <a href="developers/api" class="btn btn-accent">Developer Docs</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Main Content -->
-    <main class="container">
-        <!-- What is Babelfish Section -->
-        <section class="section">
-            <div class="content">
-                <h2>What is Babelfish?</h2>
-                <p>Inspired by the Babel fish from Douglas Adams' <em>The Hitchhiker's Guide to the Galaxy</em>, Babelfish creates a decentralized ecosystem where users connect effortlessly across 7,000+ languages. Our platform bridges Web2 accessibility with Web3 innovation, enabling seamless global communication for everyone—from casual users to professional networks.</p>
-                
-                <h3>Core Features</h3>
-                <ul>
-                    <li><strong>🌐 Universal Translation</strong>: Real-time AI-powered translations for text, audio, and video</li>
-                    <li><strong>🔗 Flexible Identity</strong>: Login via social media, email, or Web3 wallets</li>
-                    <li><strong>💰 $BABEL Token</strong>: Governance, incentives, and premium features on Solana</li>
-                    <li><strong>👥 Communities</strong>: Large-scale groups with translated content</li>
-                    <li><strong>📞 Advanced Media</strong>: Upload and record images, videos, audio, and screencasts</li>
-                    <li><strong>🌍 Global Scale</strong>: Optimized for cross-cultural collaboration</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Quick Start Grid -->
-        <section class="section">
-            <div class="content">
-                <h2>Quick Start</h2>
-                <div class="quick-start-grid">
-                    <div class="quick-start-card">
-                        <h3>🚀 New Users</h3>
-                        <p>Get started with flexible logins and discover universal translation</p>
+        <!-- Main Content -->
+        <main class="docs-main">
+            <div class="docs-content">
+                <!-- Hero Section -->
+                <section class="hero">
+                    <img src="assets/babelfish.svg" alt="Babelfish Logo" class="hero-logo">
+                    <h1>Babelfish Documentation</h1>
+                    <p>Universal communication across languages and cultures</p>
+                    <div>
                         <a href="getting-started/overview" class="btn btn-primary">Get Started</a>
-                    </div>
-                    
-                    <div class="quick-start-card">
-                        <h3>💰 Token Holders</h3>
-                        <p>Learn about $BABEL utility, governance, and earning rewards</p>
                         <a href="token/overview" class="btn btn-secondary">Explore Token</a>
                     </div>
+                </section>
+
+                <!-- What is Babelfish -->
+                <section class="content">
+                    <h2>What is Babelfish?</h2>
+                    <p>Inspired by the Babel fish from Douglas Adams' <em>The Hitchhiker's Guide to the Galaxy</em>, Babelfish creates a decentralized ecosystem where users connect effortlessly across 7,000+ languages. Our platform bridges Web2 accessibility with Web3 innovation, enabling seamless global communication for everyone—from casual users to professional networks.</p>
                     
-                    <div class="quick-start-card">
-                        <h3>👨‍💻 Developers</h3>
-                        <p>Build with our API, create bots, and integrate translations</p>
-                        <a href="developers/api" class="btn btn-accent">Developer Docs</a>
+                    <h3>Core Features</h3>
+                    <div class="grid grid-2">
+                        <div class="card">
+                            <h3>🌐 Universal Translation</h3>
+                            <p>Real-time AI-powered translations for text, audio, and video using the xAI Grok API.</p>
+                        </div>
+                        <div class="card">
+                            <h3>🔗 Flexible Identity</h3>
+                            <p>Login via social media, email, or Web3 wallets with X usernames as primary identity.</p>
+                        </div>
+                        <div class="card">
+                            <h3>💰 $BABEL Token</h3>
+                            <p>Governance, incentives, and premium features built on Solana blockchain.</p>
+                        </div>
+                        <div class="card">
+                            <h3>👥 Communities</h3>
+                            <p>Large-scale groups up to 200 members with translated content and cross-language support.</p>
+                        </div>
+                        <div class="card">
+                            <h3>📞 Advanced Media</h3>
+                            <p>Upload and record images, videos, audio, and screencasts with automatic translation.</p>
+                        </div>
+                        <div class="card">
+                            <h3>🌍 Global Scale</h3>
+                            <p>Optimized for cross-cultural collaboration and interplanetary connectivity.</p>
+                        </div>
                     </div>
+                </section>
+
+                <!-- Quick Start -->
+                <section class="content">
+                    <h2>Quick Start</h2>
+                    <div class="grid grid-3">
+                        <div class="card">
+                            <h3>🚀 New Users</h3>
+                            <p>Get started with flexible logins and discover universal translation</p>
+                            <a href="getting-started/overview" class="btn btn-primary">Get Started</a>
+                        </div>
+                        
+                        <div class="card">
+                            <h3>💰 Token Holders</h3>
+                            <p>Learn about $BABEL utility, governance, and earning rewards</p>
+                            <a href="token/overview" class="btn btn-secondary">Explore Token</a>
+                        </div>
+                        
+                        <div class="card">
+                            <h3>👨‍💻 Developers</h3>
+                            <p>Build with our API, create bots, and integrate translations</p>
+                            <a href="developers/api" class="btn btn-secondary">Developer Docs</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Latest Updates -->
+                <section class="content">
+                    <h2>Latest Updates</h2>
                     
-                    <div class="quick-start-card">
-                        <h3>🏢 Enterprises</h3>
-                        <p>Discover use cases for business teams and global collaboration</p>
-                        <a href="use-cases/business" class="btn btn-outline">Use Cases</a>
+                    <div class="card">
+                        <h3>Q4 2025: MVP Launch 🎉</h3>
+                        <ul>
+                            <li>Web app with flexible logins and universal translation</li>
+                            <li>Telegram-like messaging with AI-powered translations</li>
+                            <li>Communities up to 200 members with cross-language support</li>
+                            <li>Advanced media handling (uploads and recordings)</li>
+                            <li>$BABEL token integration for governance and rewards</li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Latest Updates Section -->
-        <section class="section">
-            <div class="content">
-                <h2>Latest Updates</h2>
-                
-                <div class="section-alt">
-                    <h3>Q4 2025: MVP Launch 🎉</h3>
-                    <ul>
-                        <li>Web app with flexible logins and universal translation</li>
-                        <li>Telegram-like messaging with AI-powered translations</li>
-                        <li>Communities up to 200 members with cross-language support</li>
-                        <li>Advanced media handling (uploads and recordings)</li>
-                        <li>$BABEL token integration for governance and rewards</li>
-                    </ul>
-                </div>
+                    <div class="card">
+                        <h3>Coming Soon</h3>
+                        <ul>
+                            <li><strong>Q1 2026</strong>: Bot framework for community automation</li>
+                            <li><strong>Q2 2026</strong>: Social media features (public pages, feeds, following)</li>
+                            <li><strong>Q3 2026</strong>: Mobile apps for iOS and Android</li>
+                            <li><strong>Q4 2026</strong>: Desktop client for seamless cross-platform access</li>
+                        </ul>
+                    </div>
+                </section>
 
-                <div class="section-alt">
-                    <h3>Coming Soon</h3>
-                    <ul>
-                        <li><strong>Q1 2026</strong>: Bot framework for community automation</li>
-                        <li><strong>Q2 2026</strong>: Social media features (public pages, feeds, following)</li>
-                        <li><strong>Q3 2026</strong>: Mobile apps for iOS and Android</li>
-                        <li><strong>Q4 2026</strong>: Desktop client for seamless cross-platform access</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+                <!-- Community -->
+                <section class="content">
+                    <h2>Join the Community</h2>
+                    <p>Connect with Babelonians worldwide and stay updated on the latest developments.</p>
+                    
+                    <div class="grid grid-2">
+                        <div class="card">
+                            <h3>🐦 X (Twitter)</h3>
+                            <p>Follow us for updates and announcements</p>
+                            <a href="https://x.com/BabelfishApp" class="btn btn-secondary">Follow @BabelfishApp</a>
+                        </div>
+                        
+                        <div class="card">
+                            <h3>💬 Discord</h3>
+                            <p>Join our community for discussions and support</p>
+                            <a href="https://discord.gg/babelfish" class="btn btn-secondary">Join Discord</a>
+                        </div>
+                        
+                        <div class="card">
+                            <h3>📧 Email</h3>
+                            <p>Get in touch for partnerships and support</p>
+                            <a href="mailto:hello@babelfish.app" class="btn btn-secondary">Contact Us</a>
+                        </div>
+                        
+                        <div class="card">
+                            <h3>🌐 Website</h3>
+                            <p>Visit our main website for more information</p>
+                            <a href="https://babelfish.app" class="btn btn-secondary">Visit Website</a>
+                        </div>
+                    </div>
+                </section>
 
-        <!-- Community Section -->
-        <section class="section">
-            <div class="content">
-                <h2>Join the Community</h2>
-                <p>Connect with Babelonians worldwide:</p>
-                
-                <div style="display: flex; gap: 2rem; justify-content: center; margin: 2rem 0;">
-                    <a href="https://x.com/BabelfishApp" class="btn btn-outline">🐦 X (Twitter)</a>
-                    <a href="https://discord.gg/babelfish" class="btn btn-outline">💬 Discord</a>
-                    <a href="mailto:hello@babelfish.app" class="btn btn-outline">📧 Email</a>
-                    <a href="https://babelfish.app" class="btn btn-outline">🌐 Website</a>
-                </div>
+                <!-- Vision Statement -->
+                <section class="content">
+                    <div class="card">
+                        <h2>Vision Statement</h2>
+                        <blockquote>
+                            "In a universe of infinite voices, communication binds us. Babelfish creates a decentralized ecosystem where users connect effortlessly, regardless of background, fostering a community-driven future that bridges Web2 accessibility with Web3 innovation."
+                        </blockquote>
+                        <p style="text-align: center; margin-top: 2rem;">
+                            <em>Ready to break down language barriers?</em>
+                            <br>
+                            <a href="getting-started/signup" class="btn btn-primary">Start your journey as a Babelonian today</a>
+                        </p>
+                    </div>
+                </section>
             </div>
-        </section>
 
-        <!-- Vision Statement -->
-        <section class="section">
-            <div class="content">
-                <div class="section-alt">
-                    <h2>Vision Statement</h2>
-                    <blockquote>
-                        "In a universe of infinite voices, communication binds us. Babelfish creates a decentralized ecosystem where users connect effortlessly, regardless of background, fostering a community-driven future that bridges Web2 accessibility with Web3 innovation."
-                    </blockquote>
-                    <p style="text-align: center; margin-top: 2rem;">
-                        <em>Ready to break down language barriers?</em>
-                        <br>
-                        <a href="getting-started/signup" class="btn btn-primary">Start your journey as a Babelonian today</a>
-                    </p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="getting-started/overview">Getting Started</a>
-                <a href="token/overview">Token</a>
-                <a href="developers/api">Developers</a>
-                <a href="roadmap/overview">Roadmap</a>
-                <a href="use-cases/business">Use Cases</a>
-                <a href="about/mission">About</a>
-                <a href="about/contact">Contact</a>
-            </div>
-            <p>&copy; 2025 Babelfish. All rights reserved. Built with ❤️ for universal communication.</p>
-        </div>
-    </footer>
+            <!-- Footer -->
+            <footer class="docs-footer">
+                <p>&copy; 2025 Babelfish. All rights reserved. Built with ❤️ for universal communication.</p>
+            </footer>
+        </main>
+    </div>
 
     <!-- Scripts -->
     <script src="assets/js/theme.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const sidebar = document.querySelector('.docs-sidebar');
+            
+            if (mobileMenuBtn && sidebar) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    sidebar.classList.toggle('open');
+                });
+                
+                // Close sidebar when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (!sidebar.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                        sidebar.classList.remove('open');
+                    }
+                });
+            }
+            
+            // Set active navigation link
+            const currentPath = window.location.pathname;
+            const navLinks = document.querySelectorAll('.docs-sidebar a');
+            
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath || 
+                    (currentPath === '/' && link.getAttribute('href') === 'getting-started/overview')) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
