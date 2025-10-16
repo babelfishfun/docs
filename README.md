@@ -210,3 +210,7 @@ To run locally:
 ---
 
 **Ready to explore?** [Start with the Getting Started Guide](getting-started/overview) or [jump to the API Documentation](developers/api).
+
+---
+
+*Last updated: $(date)*
