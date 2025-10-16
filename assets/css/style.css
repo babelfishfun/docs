@@ -1,24 +1,80 @@
 /* Babelfish Documentation Site Styles */
 /* Inspired by babelfish-ui-main app styling */
 
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+/* Import Google Fonts - Matching babelfish-ui-main */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 
-/* CSS Variables for consistent theming */
+/* CSS Variables for consistent theming - Matching babelfish-ui-main */
 :root {
-  --primary-color: #e1a640;
-  --primary-dark: #c8952a;
-  --primary-light: #f4c430;
-  --background-dark: #000000;
+  /* Primary Colors - Light Blue from Landing (#55B6E4) */
+  --color-primary-50: #e8f6fc;
+  --color-primary-100: #c5e8f7;
+  --color-primary-200: #9dd9f2;
+  --color-primary-300: #75caed;
+  --color-primary-400: #55b6e4; /* Main light blue from landing */
+  --color-primary-500: #55b6e4; /* Main light blue */
+  --color-primary-600: #3d9cc9; /* Darker variant */
+  --color-primary-700: #2e7fa8;
+  --color-primary-800: #1f6387;
+  --color-primary-900: #104766;
+
+  /* Dark Background Colors (matching landing page) */
+  --color-bg-darkest: #0a1929; /* Deep navy - main background */
+  --color-bg-darker: #132f4c; /* Darker blue-gray */
+  --color-bg-dark: #1e3a52; /* Card background */
+  --color-bg-medium: #2d4a5f; /* Medium blue-gray */
+  --color-bg-light: #3d5a6f; /* Lighter blue-gray */
+
+  /* Neutral Colors (muted grays from palette) */
+  --color-neutral-50: #f8fafc;
+  --color-neutral-100: #f1f5f9;
+  --color-neutral-200: #e9edf2; /* Light gray from palette */
+  --color-neutral-300: #cbd5e1;
+  --color-neutral-400: #94a3b8;
+  --color-neutral-500: #64748b;
+  --color-neutral-600: #475569;
+  --color-neutral-700: #334155;
+  --color-neutral-800: #263140;
+  --color-neutral-900: #111a26;
+
+  /* Semantic Colors (minimal, muted) */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #1d8ff2;
+
+  /* Dark Theme Colors */
+  --bg-primary: var(--color-bg-darkest);
+  --bg-secondary: var(--color-bg-dark);
+  --bg-tertiary: var(--color-bg-medium);
+  --bg-elevated: var(--color-bg-light);
+
+  /* Text Colors - Clean and readable */
+  --text-primary: #ffffff; /* White for primary text */
+  --text-heading: var(--color-primary-500); /* Light blue for headings */
+  --text-secondary: #b0bec5; /* Light gray for body */
+  --text-tertiary: #78909c; /* Muted gray */
+  --text-muted: #546e7a; /* Very muted */
+
+  /* Border Colors */
+  --border-default: var(--color-bg-medium);
+  --border-accent: var(--color-primary-500);
+  --border-muted: var(--color-bg-darker);
+
+  /* Legacy variables for compatibility */
+  --primary-color: var(--color-primary-500);
+  --primary-dark: var(--color-primary-600);
+  --primary-light: var(--color-primary-400);
+  --background-dark: var(--bg-primary);
   --background-light: #ffffff;
-  --text-dark: #ffffff;
+  --text-dark: var(--text-primary);
   --text-light: #000000;
-  --text-muted: #999999;
-  --border-color: rgba(225, 166, 64, 0.2);
-  --border-light: rgba(225, 166, 64, 0.1);
-  --gradient-primary: linear-gradient(135deg, #e1a640, #f4c430);
-  --gradient-dark: linear-gradient(135deg, #000000, #1a1a1a);
-  --shadow-primary: 0 4px 20px rgba(225, 166, 64, 0.3);
+  --text-muted: var(--text-tertiary);
+  --border-color: var(--border-default);
+  --border-light: var(--border-muted);
+  --gradient-primary: linear-gradient(135deg, var(--color-primary-500), var(--color-primary-400));
+  --gradient-dark: linear-gradient(135deg, var(--bg-primary), var(--color-bg-darker));
+  --shadow-primary: 0 4px 20px rgba(85, 182, 228, 0.3);
   --shadow-dark: 0 4px 20px rgba(0, 0, 0, 0.5);
   --transition: all 0.3s ease;
 }
@@ -53,16 +109,18 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background: var(--background);
   color: var(--text);
   line-height: 1.6;
   transition: var(--transition);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Typography */
+/* Typography - Matching babelfish-ui-main */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Fredoka', sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -148,11 +206,19 @@ a:hover {
 }
 
 .nav-logo {
-  font-family: 'Fredoka', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary-color);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-logo img {
+  width: 32px;
+  height: 32px;
 }
 
 .nav-links {
@@ -188,14 +254,14 @@ a:hover {
   color: var(--background-dark);
 }
 
-/* Hero Section */
+/* Hero Section - Matching babelfish-ui-main */
 .hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: var(--gradient-dark);
+  background: var(--bg-primary);
   position: relative;
   overflow: hidden;
 }
@@ -207,7 +273,7 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="hex" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><polygon points="10,2 18,6 18,14 10,18 2,14 2,6" fill="none" stroke="rgba(225,166,64,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23hex)"/></svg>');
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="hex" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><polygon points="10,2 18,6 18,14 10,18 2,14 2,6" fill="none" stroke="rgba(85,182,228,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23hex)"/></svg>');
   opacity: 0.3;
 }
 
@@ -219,16 +285,34 @@ a:hover {
   padding: 0 2rem;
 }
 
+.hero-logo {
+  width: 192px;
+  height: 192px;
+  margin: 0 auto 2rem;
+  animation: float 3s ease-in-out infinite;
+}
+
 .hero h1 {
   font-size: 4rem;
   margin-bottom: 1.5rem;
+  color: var(--text-primary);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
   font-size: 1.25rem;
   margin-bottom: 2rem;
-  color: var(--text-muted);
+  color: var(--text-secondary);
+}
+
+/* Floating animation matching babelfish-ui-main */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 /* Buttons */
