@@ -59,365 +59,95 @@
                 <div class="content">
                     <h1>Babelfish API Documentation</h1>
                     
-                    <p>Comprehensive API documentation for integrating Babelfish's universal translation services into your applications.</p>
+                    <p>Integrate Babelfish's universal translation services into your applications. Available Q1 2027.</p>
 
-                    <h2>Overview</h2>
-
-                    <div class="card">
-                        <p>The Babelfish API enables third-party applications to integrate our AI-powered translation services, community features, and Web3 functionality. Our API is designed for scalability, reliability, and ease of use.</p>
-                    </div>
-
-                    <h3>Key Features</h3>
-                    <ul>
-                        <li><strong>Real-time Translation</strong>: Text, audio, and video translation</li>
-                        <li><strong>Community Management</strong>: Create and manage communities</li>
-                        <li><strong>User Authentication</strong>: Flexible identity integration</li>
-                        <li><strong>Web3 Integration</strong>: $BABEL token and wallet functionality</li>
-                        <li><strong>Rate Limiting</strong>: Fair usage policies and rate limiting</li>
-                    </ul>
-
-                    <h2>Getting Started</h2>
+                    <h2>Quick Start</h2>
 
                     <div class="grid grid-2">
                         <div class="card">
                             <h3>API Access</h3>
                             <ul>
-                                <li><strong>Public API</strong>: Available Q1 2027</li>
-                                <li><strong>Authentication</strong>: API key-based authentication</li>
-                                <li><strong>Rate Limits</strong>: 1000 requests per hour for free tier</li>
                                 <li><strong>Base URL</strong>: <code>https://api.babelfish.app/v1</code></li>
+                                <li><strong>Authentication</strong>: API key required</li>
+                                <li><strong>Free Tier</strong>: 1,000 requests/hour</li>
+                                <li><strong>Pro Tier</strong>: 10,000 requests/hour</li>
                             </ul>
                         </div>
 
                         <div class="card">
-                            <h3>API Keys</h3>
-                            <ul>
-                                <li><strong>Free Tier</strong>: 1000 requests/hour</li>
-                                <li><strong>Pro Tier</strong>: 10,000 requests/hour</li>
-                                <li><strong>Enterprise</strong>: Custom limits and features</li>
-                                <li><strong>Get API Key</strong>: <a href="https://developer.babelfish.app">Register at developer.babelfish.app</a></li>
-                            </ul>
+                            <h3>Get API Key</h3>
+                            <p>Register at <a href="https://developer.babelfish.app">developer.babelfish.app</a> to get your API key.</p>
                         </div>
                     </div>
 
-                    <h3>Authentication</h3>
-                    <p>All API requests require an API key in the header:</p>
+                    <h2>Authentication</h2>
+
+                    <p>Include your API key in the Authorization header:</p>
                     <pre><code>Authorization: Bearer YOUR_API_KEY</code></pre>
 
-                    <h2>Translation Endpoints</h2>
-
-                    <div class="card">
-                        <h3>Text Translation</h3>
-                        <h4>POST /translate/text</h4>
-                        <p>Translate text between languages with cultural context.</p>
-
-                        <h5>Request:</h5>
-                        <pre><code>{
-  "text": "Hello, how are you?",
-  "source_language": "en",
-  "target_language": "es",
-  "context": "casual_conversation",
-  "cultural_context": true
-}</code></pre>
-
-                        <h5>Response:</h5>
-                        <pre><code>{
-  "success": true,
-  "translated_text": "Hola, ¿cómo estás?",
-  "confidence": 0.95,
-  "cultural_notes": "Casual greeting, appropriate for friends",
-  "processing_time": 0.2
-}</code></pre>
-
-                        <h5>Parameters:</h5>
-                        <ul>
-                            <li><code>text</code> (string, required): Text to translate</li>
-                            <li><code>source_language</code> (string, required): Source language code (ISO 639-1)</li>
-                            <li><code>target_language</code> (string, required): Target language code (ISO 639-1)</li>
-                            <li><code>context</code> (string, optional): Translation context (casual_conversation, business, technical, etc.)</li>
-                            <li><code>cultural_context</code> (boolean, optional): Include cultural context in translation</li>
-                        </ul>
-                    </div>
-
-                    <div class="card">
-                        <h3>Audio Translation</h3>
-                        <h4>POST /translate/audio</h4>
-                        <p>Translate audio content with voice preservation.</p>
-
-                        <h5>Request:</h5>
-                        <pre><code>{
-  "audio_url": "https://example.com/audio.mp3",
-  "source_language": "en",
-  "target_language": "fr",
-  "preserve_voice": true,
-  "format": "mp3"
-}</code></pre>
-
-                        <h5>Response:</h5>
-                        <pre><code>{
-  "success": true,
-  "translated_audio_url": "https://api.babelfish.app/audio/translated_123.mp3",
-  "confidence": 0.92,
-  "duration": 15.5,
-  "processing_time": 3.2
-}</code></pre>
-                    </div>
-
-                    <div class="card">
-                        <h3>Video Translation</h3>
-                        <h4>POST /translate/video</h4>
-                        <p>Translate video content with lip-sync technology.</p>
-
-                        <h5>Request:</h5>
-                        <pre><code>{
-  "video_url": "https://example.com/video.mp4",
-  "source_language": "en",
-  "target_language": "de",
-  "lip_sync": true,
-  "subtitle_track": true,
-  "format": "mp4"
-}</code></pre>
-
-                        <h5>Response:</h5>
-                        <pre><code>{
-  "success": true,
-  "translated_video_url": "https://api.babelfish.app/video/translated_456.mp4",
-  "subtitle_url": "https://api.babelfish.app/subtitles/456.srt",
-  "confidence": 0.89,
-  "duration": 120.0,
-  "processing_time": 45.8
-}</code></pre>
-                    </div>
-
-                    <h2>Community Endpoints</h2>
-
-                    <div class="card">
-                        <h3>Community Management</h3>
-                        <h4>GET /communities</h4>
-                        <p>List communities with optional filtering.</p>
-
-                        <h5>Request:</h5>
-                        <pre><code>GET /communities?category=technology&language=en&limit=20&offset=0</code></pre>
-
-                        <h5>Response:</h5>
-                        <pre><code>{
-  "success": true,
-  "communities": [
-    {
-      "id": "comm_123",
-      "name": "Web3 Developers",
-      "description": "Community for Web3 developers",
-      "member_count": 150,
-      "category": "technology",
-      "languages": ["en", "es", "fr"],
-      "created_at": "2025-01-15T10:30:00Z"
-    }
-  ],
-  "total": 150,
-  "limit": 20,
-  "offset": 0
-}</code></pre>
-                    </div>
-
-                    <div class="card">
-                        <h3>Message Management</h3>
-                        <h4>POST /communities/{id}/messages</h4>
-                        <p>Send a message to a community.</p>
-
-                        <h5>Request:</h5>
-                        <pre><code>{
-  "content": "Hello everyone!",
-  "type": "text",
-  "language": "en",
-  "reply_to": null
-}</code></pre>
-
-                        <h5>Response:</h5>
-                        <pre><code>{
-  "success": true,
-  "message": {
-    "id": "msg_456",
-    "content": "Hello everyone!",
-    "translated_content": {
-      "es": "¡Hola a todos!",
-      "fr": "Bonjour tout le monde!"
-    },
-    "type": "text",
-    "language": "en",
-    "author": "user_123",
-    "created_at": "2025-01-15T10:30:00Z"
-  }
-}</code></pre>
-                    </div>
-
-                    <h2>Web3 Integration</h2>
-
-                    <div class="card">
-                        <h3>$BABEL Token</h3>
-                        <h4>GET /users/{id}/babel</h4>
-                        <p>Get user's $BABEL token balance and information.</p>
-
-                        <h5>Response:</h5>
-                        <pre><code>{
-  "success": true,
-  "balance": {
-    "total": 1000.5,
-    "staked": 500.0,
-    "available": 500.5,
-    "usd_value": 125.75
-  },
-  "rewards": {
-    "invitation_rewards": 50.0,
-    "community_rewards": 25.0,
-    "staking_rewards": 10.5
-  }
-}</code></pre>
-                    </div>
-
-                    <div class="card">
-                        <h3>Governance</h3>
-                        <h4>GET /governance/proposals</h4>
-                        <p>Get active governance proposals.</p>
-
-                        <h5>Response:</h5>
-                        <pre><code>{
-  "success": true,
-  "proposals": [
-    {
-      "id": "prop_123",
-      "title": "Increase community size limit",
-      "description": "Proposal to increase community size from 200 to 500 members",
-      "status": "active",
-      "votes_for": 1500,
-      "votes_against": 300,
-      "end_date": "2025-01-22T10:30:00Z"
-    }
-  ]
-}</code></pre>
-                    </div>
-
-                    <h2>Rate Limits</h2>
-
-                    <div class="grid grid-3">
-                        <div class="card">
-                            <h3>Free Tier</h3>
-                            <ul>
-                                <li><strong>Requests per hour</strong>: 1,000</li>
-                                <li><strong>Requests per day</strong>: 10,000</li>
-                                <li><strong>Concurrent requests</strong>: 10</li>
-                            </ul>
-                        </div>
-
-                        <div class="card">
-                            <h3>Pro Tier</h3>
-                            <ul>
-                                <li><strong>Requests per hour</strong>: 10,000</li>
-                                <li><strong>Requests per day</strong>: 100,000</li>
-                                <li><strong>Concurrent requests</strong>: 50</li>
-                            </ul>
-                        </div>
-
-                        <div class="card">
-                            <h3>Enterprise</h3>
-                            <ul>
-                                <li><strong>Custom limits</strong> based on agreement</li>
-                                <li><strong>Priority support</strong></li>
-                                <li><strong>Custom features</strong></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <h3>Rate Limit Headers</h3>
-                    <pre><code>X-RateLimit-Limit: 1000
-X-RateLimit-Remaining: 999
-X-RateLimit-Reset: 1640995200</code></pre>
-
-                    <h2>Error Handling</h2>
-
-                    <div class="card">
-                        <h3>Error Response Format</h3>
-                        <pre><code>{
-  "success": false,
-  "error": {
-    "code": "RATE_LIMIT_EXCEEDED",
-    "message": "Rate limit exceeded. Try again in 3600 seconds.",
-    "details": {
-      "limit": 1000,
-      "remaining": 0,
-      "reset_time": 1640995200
-    }
-  }
-}</code></pre>
-
-                        <h3>Common Error Codes</h3>
-                        <ul>
-                            <li><code>INVALID_API_KEY</code>: Invalid or missing API key</li>
-                            <li><code>RATE_LIMIT_EXCEEDED</code>: Rate limit exceeded</li>
-                            <li><code>INVALID_REQUEST</code>: Malformed request</li>
-                            <li><code>TRANSLATION_FAILED</code>: Translation service error</li>
-                            <li><code>INSUFFICIENT_BALANCE</code>: Insufficient $BABEL balance</li>
-                            <li><code>COMMUNITY_NOT_FOUND</code>: Community not found</li>
-                            <li><code>USER_NOT_FOUND</code>: User not found</li>
-                        </ul>
-                    </div>
-
-                    <h2>SDKs and Libraries</h2>
-
-                    <div class="card">
-                        <h3>Official SDKs</h3>
-                        <ul>
-                            <li><strong>JavaScript/Node.js</strong>: <code>npm install babelfish-sdk</code></li>
-                            <li><strong>Python</strong>: <code>pip install babelfish-sdk</code></li>
-                            <li><strong>Go</strong>: <code>go get github.com/babelfish/sdk-go</code></li>
-                            <li><strong>PHP</strong>: <code>composer require babelfish/sdk-php</code></li>
-                        </ul>
-                    </div>
-
-                    <div class="card">
-                        <h3>Example Usage (JavaScript)</h3>
-                        <pre><code>import { BabelfishSDK } from 'babelfish-sdk';
-
-const sdk = new BabelfishSDK('your-api-key');
-
-// Translate text
-const translation = await sdk.translate.text({
-  text: 'Hello, world!',
-  source_language: 'en',
-  target_language: 'es'
-});
-
-console.log(translation.translated_text); // "¡Hola, mundo!"</code></pre>
-                    </div>
-
-                    <h2>Testing</h2>
-
-                    <div class="card">
-                        <h3>Sandbox Environment</h3>
-                        <ul>
-                            <li><strong>Base URL</strong>: <code>https://sandbox-api.babelfish.app/v1</code></li>
-                            <li><strong>Test API Key</strong>: Available in developer dashboard</li>
-                            <li><strong>Mock Data</strong>: Pre-populated test data</li>
-                            <li><strong>Rate Limits</strong>: Higher limits for testing</li>
-                        </ul>
-                    </div>
-
-                    <h2>Support</h2>
+                    <h2>Key Endpoints</h2>
 
                     <div class="grid grid-2">
                         <div class="card">
-                            <h3>Documentation</h3>
+                            <h3>Text Translation</h3>
+                            <p><code>POST /translate/text</code></p>
+                            <p>Translate text between languages with cultural context.</p>
+                            <pre><code>{
+  "text": "Hello, how are you?",
+  "source_language": "en",
+  "target_language": "es"
+}</code></pre>
+                        </div>
+
+                        <div class="card">
+                            <h3>Audio Translation</h3>
+                            <p><code>POST /translate/audio</code></p>
+                            <p>Translate audio content with voice preservation.</p>
+                            <pre><code>{
+  "audio_url": "https://example.com/audio.mp3",
+  "source_language": "en",
+  "target_language": "fr"
+}</code></pre>
+                        </div>
+
+                        <div class="card">
+                            <h3>Community Management</h3>
+                            <p><code>GET /communities</code></p>
+                            <p>List and manage communities with translation features.</p>
+                            <pre><code>GET /communities?category=technology&limit=20</code></pre>
+                        </div>
+
+                        <div class="card">
+                            <h3>$BABEL Token</h3>
+                            <p><code>GET /users/{id}/babel</code></p>
+                            <p>Get user's $BABEL token balance and rewards.</p>
+                            <pre><code>{
+  "balance": {
+    "total": 1000.5,
+    "staked": 500.0,
+    "available": 500.5
+  }
+}</code></pre>
+                        </div>
+                    </div>
+
+                    <h2>SDKs & Support</h2>
+
+                    <div class="grid grid-2">
+                        <div class="card">
+                            <h3>Official SDKs</h3>
                             <ul>
-                                <li><strong>API Reference</strong>: <a href="https://docs.babelfish.app/api">docs.babelfish.app/api</a></li>
-                                <li><strong>SDK Documentation</strong>: <a href="https://docs.babelfish.app/sdk">docs.babelfish.app/sdk</a></li>
-                                <li><strong>Examples</strong>: <a href="https://github.com/babelfish/examples">github.com/babelfish/examples</a></li>
+                                <li><strong>JavaScript</strong>: <code>npm install babelfish-sdk</code></li>
+                                <li><strong>Python</strong>: <code>pip install babelfish-sdk</code></li>
+                                <li><strong>Go</strong>: <code>go get github.com/babelfish/sdk-go</code></li>
                             </ul>
                         </div>
 
                         <div class="card">
-                            <h3>Community Support</h3>
+                            <h3>Support</h3>
                             <ul>
+                                <li><strong>Documentation</strong>: <a href="https://docs.babelfish.app/api">docs.babelfish.app/api</a></li>
                                 <li><strong>Discord</strong>: <a href="https://discord.gg/babelfish-dev">discord.gg/babelfish-dev</a></li>
-                                <li><strong>GitHub</strong>: <a href="https://github.com/babelfish/api-issues">github.com/babelfish/api-issues</a></li>
                                 <li><strong>Email</strong>: <a href="mailto:api-support@babelfish.app">api-support@babelfish.app</a></li>
                             </ul>
                         </div>
@@ -426,6 +156,7 @@ console.log(translation.translated_text); // "¡Hola, mundo!"</code></pre>
                     <div class="card">
                         <p><strong>Ready to integrate?</strong> <a href="https://developer.babelfish.app" class="btn btn-primary">Get your API key</a> or explore our SDKs!</p>
                     </div>
+
                 </div>
             </div>
         </main>
