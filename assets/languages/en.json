@@ -99,10 +99,6 @@
         "title": "Community Pages",
         "content": "Customizable pages similar to X pages, serving as hubs for token projects with feeds, events, and integrated chats. These enable raids (time-bound engagement events), raid contests, and airdrops based on user activity."
       },
-      "ui": {
-        "title": "UI",
-        "content": "Minimalistic design with dark/light modes, hexagonal overlays, and \"Inter\" font. Extensible for mobile/desktop, with robust error handling."
-      },
       "mvp_description": "The MVP focuses on Telegram-like communication essentials—messaging, calls, communities, and media—while laying the foundation for expansion into social media elements like public pages, following users, personalized home feeds showing followed activity, and broader networking tools. This hybrid approach bridges Web2 and Web3, helping Web3 communities grow organically and enabling higher collaboration for dispersed teams, with engagement-driven rewards promoting active participation."
     },
     "babel_token": {
@@ -348,8 +344,7 @@
     "cta_button": "Start your journey as a Babelonian today"
   },
   "footer": {
-    "copyright": "© 2025 Babelfish. All rights reserved. Built with ❤️ for universal communication.",
-    "last_updated": "Last updated:"
+    "copyright": "Built with ❤️ by Babelonians"
   },
   "getting_started": {
     "overview": {
@@ -544,16 +539,17 @@
         "feature5": "Revenue model adjustments",
         "staking": "Higher staking amounts provide increased voting power, ensuring that committed community members have greater influence over platform direction."
       },
-      "incentives": {
-        "title": "Community Incentives",
-        "description": "Earn $BABEL through active participation in the Babelfish ecosystem:",
-        "feature1": "Invite new users (10 $BABEL per successful invite)",
-        "feature2": "Join and participate in communities",
-        "feature3": "Engage with content (likes, comments, reposts)",
-        "feature4": "Send translated messages",
-        "feature5": "Participate in raids and contests",
-        "airdrop": "Periodic airdrops from the community rewards pool (40% of total supply) are distributed based on engagement scores and activity levels."
-      },
+    "incentives": {
+      "title": "Community Incentives",
+      "description": "Earn $BABEL through active participation in the Babelfish ecosystem:",
+      "feature1": "Invite new users and expand the community",
+      "feature2": "Join and participate in communities",
+      "feature3": "Engage with content (likes, comments, reposts)",
+      "feature4": "Send translated messages",
+      "feature5": "Participate in raids and contests",
+      "feature6": "Stake $BABEL for engagement score multipliers",
+      "airdrop": "Seasonal and periodic airdrops from the community rewards pool (40% of total supply) are distributed based on engagement scores and activity levels. Token projects can host custom airdrops using their own tokens, rewarding top engagers on their community pages, chats, or during raids."
+    },
       "premium": {
         "title": "Premium Features",
         "description": "Stake $BABEL to unlock enhanced platform features:",
