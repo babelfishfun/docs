@@ -1,4 +1,18 @@
 {
+  "nav": {
+    "getting_started": "Getting Started",
+    "token": "Token",
+    "developers": "Developers",
+    "resources": "Resources",
+    "overview": "Overview",
+    "signup": "Sign Up",
+    "faq": "FAQ",
+    "tokenomics": "Tokenomics",
+    "api_reference": "API Reference",
+    "roadmap": "Roadmap",
+    "use_cases": "Use Cases",
+    "about": "About"
+  },
   "hero": {
     "title": "Babelfish",
     "subtitle": "Universal communication across languages and cultures",

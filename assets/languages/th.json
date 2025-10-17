@@ -1,4 +1,18 @@
 {
+  "nav": {
+    "getting_started": "เริ่มต้น",
+    "token": "โทเค็น",
+    "developers": "นักพัฒนา",
+    "resources": "ทรัพยากร",
+    "overview": "ภาพรวม",
+    "signup": "สมัครสมาชิก",
+    "faq": "คำถามที่พบบ่อย",
+    "tokenomics": "โทเค็นโนมิกส์",
+    "api_reference": "เอกสารอ้างอิง API",
+    "roadmap": "แผนงาน",
+    "use_cases": "กรณีการใช้งาน",
+    "about": "เกี่ยวกับ"
+  },
   "hero": {
     "title": "Babelfish",
     "subtitle": "การสื่อสารสากลข้ามภาษาและวัฒนธรรม",
