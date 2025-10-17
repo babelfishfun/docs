@@ -47,6 +47,15 @@ class I18n {
     translatePage() {
         const elements = document.querySelectorAll('[data-translate]');
         console.log(`Found ${elements.length} elements to translate`);
+        console.log('All elements with data-translate:', elements);
+        
+        // Also check if there are any elements at all
+        const allElements = document.querySelectorAll('*');
+        console.log(`Total elements on page: ${allElements.length}`);
+        
+        // Check for specific elements we know should have data-translate
+        const h1Elements = document.querySelectorAll('h1');
+        console.log('H1 elements:', h1Elements);
         
         elements.forEach(element => {
             const key = element.getAttribute('data-translate');
@@ -155,6 +164,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     window.i18n = new I18n();
     await window.i18n.init();
     console.log('i18n system initialized');
+    
+    // Also try again after a short delay to catch any dynamically loaded content
+    setTimeout(() => {
+        console.log('Running delayed translation check...');
+        if (window.i18n) {
+            window.i18n.translatePage();
+        }
+    }, 100);
 });
 
 // Export for use in other scripts
