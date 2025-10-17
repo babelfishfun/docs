@@ -231,13 +231,13 @@
   },
   "quick_start": {
     "title": "Quick Start",
-    "new_users": {
-      "title": "🚀 New Users",
+    "users": {
+      "title": "🚀 Users",
       "description": "Get started with flexible logins and discover universal translation",
       "get_started": "Get Started"
     },
-    "token_holders": {
-      "title": "💰 Token Holders",
+    "holders": {
+      "title": "💰 Holders",
       "description": "Learn about $BABEL utility, governance, and earning rewards",
       "explore_token": "Explore Token"
     },
