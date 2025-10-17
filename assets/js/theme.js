@@ -1,35 +1,9 @@
-// Theme toggle functionality for Babelfish Documentation
+// Core functionality for Babelfish Documentation (Dark mode by default)
 
 document.addEventListener('DOMContentLoaded', function() {
-    const themeToggle = document.querySelector('.theme-toggle');
+    // Set default theme to dark
     const html = document.documentElement;
-    
-    // Check for saved theme preference or default to light mode
-    const savedTheme = localStorage.getItem('babelfish-docs-theme') || 'light';
-    html.setAttribute('data-theme', savedTheme);
-    
-    // Update button text based on current theme
-    updateThemeButton();
-    
-    // Theme toggle event listener
-    if (themeToggle) {
-        themeToggle.addEventListener('click', function() {
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('babelfish-docs-theme', newTheme);
-            
-            updateThemeButton();
-        });
-    }
-    
-    function updateThemeButton() {
-        const currentTheme = html.getAttribute('data-theme');
-        if (themeToggle) {
-            themeToggle.textContent = currentTheme === 'light' ? '🌙 Dark' : '☀️ Light';
-        }
-    }
+    html.setAttribute('data-theme', 'dark');
     
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -51,22 +25,18 @@ document.addEventListener('DOMContentLoaded', function() {
     
     navLinks.forEach(link => {
         const linkPath = link.getAttribute('href');
-        
-        // Check if this link matches the current page
-        if (linkPath === currentPath || 
-            (currentPath === '/' && linkPath === 'getting-started/overview') ||
-            (currentPath.endsWith('/') && linkPath === currentPath.slice(0, -1))) {
+        if (currentPath === linkPath || 
+            (currentPath === '/' && linkPath === 'getting-started/overview.html')) {
             link.classList.add('active');
         }
     });
     
-    // Mobile menu functionality
+    // Mobile menu toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const sidebar = document.querySelector('.docs-sidebar');
     
     if (mobileMenuBtn && sidebar) {
-        mobileMenuBtn.addEventListener('click', function(e) {
-            e.stopPropagation();
+        mobileMenuBtn.addEventListener('click', function() {
             sidebar.classList.toggle('open');
         });
         
@@ -76,51 +46,27 @@ document.addEventListener('DOMContentLoaded', function() {
                 sidebar.classList.remove('open');
             }
         });
-        
-        // Close sidebar when clicking on a link (mobile)
-        sidebar.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', function() {
-                if (window.innerWidth <= 768) {
-                    sidebar.classList.remove('open');
-                }
-            });
-        });
     }
     
-    // Add copy functionality to code blocks
+    // Copy code blocks functionality
     document.querySelectorAll('pre code').forEach(block => {
-        const pre = block.parentElement;
         const button = document.createElement('button');
         button.className = 'copy-btn';
         button.textContent = 'Copy';
-        button.style.cssText = `
-            position: absolute;
-            top: 0.5rem;
-            right: 0.5rem;
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-light);
-            color: var(--text-secondary);
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            cursor: pointer;
-            transition: var(--transition);
-        `;
-        
-        pre.style.position = 'relative';
-        pre.appendChild(button);
-        
-        button.addEventListener('click', async function() {
-            try {
-                await navigator.clipboard.writeText(block.textContent);
+        button.addEventListener('click', function() {
+            navigator.clipboard.writeText(block.textContent).then(() => {
                 button.textContent = 'Copied!';
                 setTimeout(() => {
                     button.textContent = 'Copy';
                 }, 2000);
-            } catch (err) {
+            }).catch(err => {
                 console.error('Failed to copy text: ', err);
-            }
+            });
         });
+        
+        const pre = block.parentElement;
+        pre.style.position = 'relative';
+        pre.appendChild(button);
     });
     
     // Search functionality

@@ -1,0 +1,113 @@
+{
+  "hero": {
+    "title": "Babelfish",
+    "subtitle": "Universal communication across languages and cultures",
+    "get_started": "Get Started",
+    "explore_token": "Explore Token"
+  },
+  "what_is": {
+    "title": "What is Babelfish?",
+    "description": "Inspired by the Babel fish from Douglas Adams' The Hitchhiker's Guide to the Galaxy, Babelfish creates a decentralized ecosystem where users connect effortlessly across 7,000+ languages. Our platform bridges Web2 accessibility with Web3 innovation, enabling seamless global communication for everyone—from casual users to professional networks.",
+    "core_features": "Core Features"
+  },
+  "features": {
+    "universal_translation": {
+      "title": "🌐 Universal Translation",
+      "description": "Real-time AI-powered translations for text, audio, and video using the xAI Grok API."
+    },
+    "flexible_identity": {
+      "title": "🔗 Flexible Identity",
+      "description": "Login via social media, email, or Web3 wallets with X usernames as primary identity."
+    },
+    "babel_token": {
+      "title": "💰 $BABEL Token",
+      "description": "Governance, incentives, and premium features built on Solana blockchain."
+    },
+    "communities": {
+      "title": "👥 Communities",
+      "description": "Large-scale groups up to 200 members with translated content and cross-language support."
+    },
+    "advanced_media": {
+      "title": "📞 Advanced Media",
+      "description": "Upload and record images, videos, audio, and screencasts with automatic translation."
+    },
+    "global_scale": {
+      "title": "🌍 Global Scale",
+      "description": "Optimized for cross-cultural collaboration and interplanetary connectivity."
+    }
+  },
+  "quick_start": {
+    "title": "Quick Start",
+    "new_users": {
+      "title": "🚀 New Users",
+      "description": "Get started with flexible logins and discover universal translation",
+      "button": "Get Started"
+    },
+    "token_holders": {
+      "title": "💰 Token Holders",
+      "description": "Learn about $BABEL utility, governance, and earning rewards",
+      "button": "Explore Token"
+    },
+    "developers": {
+      "title": "👨‍💻 Developers",
+      "description": "Build with our API, create bots, and integrate translations",
+      "button": "Developer Docs"
+    }
+  },
+  "latest_updates": {
+    "title": "Latest Updates",
+    "mvp_launch": {
+      "title": "Q4 2025: MVP Launch 🎉",
+      "features": [
+        "Web app with flexible logins and universal translation",
+        "Telegram-like messaging with AI-powered translations",
+        "Communities up to 200 members with cross-language support",
+        "Advanced media handling (uploads and recordings)",
+        "$BABEL token integration for governance and rewards"
+      ]
+    },
+    "coming_soon": {
+      "title": "Coming Soon",
+      "features": [
+        "Q1 2026: Bot framework for community automation",
+        "Q2 2026: Social media features (public pages, feeds, following)",
+        "Q3 2026: Mobile apps for iOS and Android",
+        "Q4 2026: Desktop client for seamless cross-platform access"
+      ]
+    }
+  },
+  "community": {
+    "title": "Join the Community",
+    "description": "Connect with Babelonians worldwide and stay updated on the latest developments.",
+    "twitter": {
+      "title": "🐦 X (Twitter)",
+      "description": "Follow us for updates and announcements",
+      "button": "Follow @BabelfishApp"
+    },
+    "discord": {
+      "title": "💬 Discord",
+      "description": "Join our community for discussions and support",
+      "button": "Join Discord"
+    },
+    "email": {
+      "title": "📧 Email",
+      "description": "Get in touch for partnerships and support",
+      "button": "Contact Us"
+    },
+    "website": {
+      "title": "🌐 Website",
+      "description": "Visit our main website for more information",
+      "button": "Visit Website"
+    }
+  },
+  "vision": {
+    "title": "Vision Statement",
+    "quote": "In a universe of infinite voices, communication binds us. Babelfish creates a decentralized ecosystem where users connect effortlessly, regardless of background, fostering a community-driven future that bridges Web2 accessibility with Web3 innovation.",
+    "cta_text": "Ready to break down language barriers?",
+    "cta_button": "Start your journey as a Babelonian today"
+  },
+  "footer": {
+    "copyright": "© 2025 Babelfish. All rights reserved. Built with ❤️ for universal communication.",
+    "last_updated": "Last updated:"
+  }
+}

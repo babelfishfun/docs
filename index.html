@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +40,12 @@
                 <img src="assets/babelfish.svg" alt="Babelfish Logo">
                 Babelfish Docs
             </a>
-            <button class="theme-toggle">🌙 Dark</button>
+            <div class="language-selector">
+                <select id="language-select" aria-label="Select language">
+                    <option value="en">🇺🇸 English</option>
+                    <option value="th">🇹🇭 ไทย</option>
+                </select>
+            </div>
         </header>
 
         <!-- Sidebar -->
@@ -80,45 +85,45 @@
             <div class="docs-content">
                 <!-- Hero Section -->
                 <section class="hero">
-                    <img src="assets/babelfish.svg" alt="Babelfish Logo" class="hero-logo">
-                    <h1>Babelfish</h1>
-                    <p>Universal communication across languages and cultures</p>
-                    <div>
-                        <a href="getting-started/overview" class="btn btn-primary">Get Started</a>
-                        <a href="token/overview" class="btn btn-secondary">Explore Token</a>
-                    </div>
+                <img src="assets/babelfish.svg" alt="Babelfish Logo" class="hero-logo">
+                <h1 data-translate="hero.title">Babelfish</h1>
+                <p data-translate="hero.subtitle">Universal communication across languages and cultures</p>
+                <div>
+                    <a href="getting-started/overview" class="btn btn-primary" data-translate="hero.get_started">Get Started</a>
+                    <a href="token/overview" class="btn btn-secondary" data-translate="hero.explore_token">Explore Token</a>
+                </div>
                 </section>
 
                 <!-- What is Babelfish -->
                 <section class="content">
-                    <h2>What is Babelfish?</h2>
-                    <p>Inspired by the Babel fish from Douglas Adams' <em>The Hitchhiker's Guide to the Galaxy</em>, Babelfish creates a decentralized ecosystem where users connect effortlessly across 7,000+ languages. Our platform bridges Web2 accessibility with Web3 innovation, enabling seamless global communication for everyone—from casual users to professional networks.</p>
+                    <h2 data-translate="what_is.title">What is Babelfish?</h2>
+                    <p data-translate="what_is.description">Inspired by the Babel fish from Douglas Adams' <em>The Hitchhiker's Guide to the Galaxy</em>, Babelfish creates a decentralized ecosystem where users connect effortlessly across 7,000+ languages. Our platform bridges Web2 accessibility with Web3 innovation, enabling seamless global communication for everyone—from casual users to professional networks.</p>
                     
-                    <h3>Core Features</h3>
+                    <h3 data-translate="what_is.core_features">Core Features</h3>
                     <div class="grid grid-2">
                         <div class="card">
-                            <h3>🌐 Universal Translation</h3>
-                            <p>Real-time AI-powered translations for text, audio, and video using the xAI Grok API.</p>
+                            <h3 data-translate="features.universal_translation.title">🌐 Universal Translation</h3>
+                            <p data-translate="features.universal_translation.description">Real-time AI-powered translations for text, audio, and video using the xAI Grok API.</p>
                         </div>
                         <div class="card">
-                            <h3>🔗 Flexible Identity</h3>
-                            <p>Login via social media, email, or Web3 wallets with X usernames as primary identity.</p>
+                            <h3 data-translate="features.flexible_identity.title">🔗 Flexible Identity</h3>
+                            <p data-translate="features.flexible_identity.description">Login via social media, email, or Web3 wallets with X usernames as primary identity.</p>
                         </div>
                         <div class="card">
-                            <h3>💰 $BABEL Token</h3>
-                            <p>Governance, incentives, and premium features built on Solana blockchain.</p>
+                            <h3 data-translate="features.babel_token.title">💰 $BABEL Token</h3>
+                            <p data-translate="features.babel_token.description">Governance, incentives, and premium features built on Solana blockchain.</p>
                         </div>
                         <div class="card">
-                            <h3>👥 Communities</h3>
-                            <p>Large-scale groups up to 200 members with translated content and cross-language support.</p>
+                            <h3 data-translate="features.communities.title">👥 Communities</h3>
+                            <p data-translate="features.communities.description">Large-scale groups up to 200 members with translated content and cross-language support.</p>
                         </div>
                         <div class="card">
-                            <h3>📞 Advanced Media</h3>
-                            <p>Upload and record images, videos, audio, and screencasts with automatic translation.</p>
+                            <h3 data-translate="features.advanced_media.title">📞 Advanced Media</h3>
+                            <p data-translate="features.advanced_media.description">Upload and record images, videos, audio, and screencasts with automatic translation.</p>
                         </div>
                         <div class="card">
-                            <h3>🌍 Global Scale</h3>
-                            <p>Optimized for cross-cultural collaboration and interplanetary connectivity.</p>
+                            <h3 data-translate="features.global_scale.title">🌍 Global Scale</h3>
+                            <p data-translate="features.global_scale.description">Optimized for cross-cultural collaboration and interplanetary connectivity.</p>
                         </div>
                     </div>
                 </section>
@@ -223,8 +228,8 @@
 
             <!-- Footer -->
             <footer class="docs-footer">
-                <p>&copy; 2025 Babelfish. All rights reserved. Built with ❤️ for universal communication.</p>
-                <p class="last-updated">Last updated: <span id="last-updated-date"></span></p>
+                <p data-translate="footer.copyright">&copy; 2025 Babelfish. All rights reserved. Built with ❤️ for universal communication.</p>
+                <p class="last-updated"><span data-translate="footer.last_updated">Last updated:</span> <span id="last-updated-date"></span></p>
             </footer>
         </main>
         
@@ -233,6 +238,7 @@
     </div>
 
     <!-- Scripts -->
+    <script src="assets/js/i18n.js"></script>
     <script src="assets/js/theme.js"></script>
     <script>
         // Mobile menu toggle
