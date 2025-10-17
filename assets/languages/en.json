@@ -109,5 +109,142 @@
   "footer": {
     "copyright": "© 2025 Babelfish. All rights reserved. Built with ❤️ for universal communication.",
     "last_updated": "Last updated:"
+  },
+  "getting_started": {
+    "overview": {
+      "title": "Getting Started with Babelfish",
+      "description": "Babelfish is a Web3 communication platform that dissolves language barriers through AI-powered translation. Inspired by the Babel fish from The Hitchhiker's Guide to the Galaxy, we enable seamless communication across 100+ languages.",
+      "key_features": "Key Features",
+      "universal_translation": {
+        "title": "Universal Translation",
+        "description": "Real-time AI translation for text, audio, and video across 100+ languages using xAI Grok API."
+      },
+      "flexible_identity": {
+        "title": "Flexible Identity",
+        "description": "Connect via social media, email, or Web3 wallets. Set your primary language during onboarding."
+      },
+      "communities": {
+        "title": "Communities",
+        "description": "Join communities up to 200 members with automatic message translation and media sharing."
+      },
+      "babel_token": {
+        "title": "$BABEL Token",
+        "description": "Earn rewards, participate in governance, and access premium features through Solana-based $BABEL tokens."
+      },
+      "getting_started": "Getting Started",
+      "step1": "Sign Up: Choose your preferred login method",
+      "step2": "Set Your Language: Select your primary language (100+ options)",
+      "step3": "Connect Wallet: Link a Solana wallet for $BABEL tokens",
+      "step4": "Join Communities: Find groups that interest you",
+      "step5": "Start Communicating: Send your first translated message!",
+      "ready": "Ready to get started?",
+      "signup_button": "Sign up now",
+      "faq_link": "check our FAQ"
+    },
+    "signup": {
+      "title": "Sign Up for Babelfish",
+      "description": "Join the universal communication revolution. Choose your preferred signup method and start connecting across languages.",
+      "signup_methods": "Signup Methods",
+      "social_login": {
+        "title": "Social Media Login",
+        "description": "Quick and easy signup using your existing social media accounts",
+        "platforms": "X (Twitter), Facebook, LinkedIn"
+      },
+      "email_login": {
+        "title": "Email Signup",
+        "description": "Traditional email and password registration",
+        "features": "Full control over your account"
+      },
+      "web3_login": {
+        "title": "Web3 Wallet",
+        "description": "Connect with your Solana wallet for full Web3 integration",
+        "features": "Direct $BABEL token access"
+      },
+      "after_signup": "Getting Started After Signup",
+      "socialize": {
+        "title": "Socialize",
+        "description": "Find communities that interest you and start connecting with people worldwide."
+      },
+      "chat": {
+        "title": "Chat",
+        "description": "Send your first message and watch it get translated automatically for others."
+      },
+      "earn": {
+        "title": "Earn",
+        "description": "Invite friends and earn 10 $BABEL tokens for each successful invite."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "description": "Common questions about Babelfish and getting started.",
+      "general_questions": "General Questions",
+      "getting_started_questions": "Getting Started",
+      "babel_token_questions": "$BABEL Token",
+      "support": "Support",
+      "what_is": {
+        "question": "What is Babelfish?",
+        "answer": "Web3 communication platform with AI-powered translation across 100+ languages, inspired by the Babel fish from The Hitchhiker's Guide to the Galaxy."
+      },
+      "how_translation_works": {
+        "question": "How does translation work?",
+        "answer": "Uses xAI Grok API for real-time translation of text, audio, and video with cultural context understanding."
+      },
+      "is_free": {
+        "question": "Is it free?",
+        "answer": "Yes! Basic features are free including translation, communities (up to 200 members), and $BABEL token earning."
+      },
+      "whats_different": {
+        "question": "What's different?",
+        "answer": "Web3 integration, flexible identity system, community-focused features, and cross-platform availability."
+      },
+      "how_signup": {
+        "question": "How do I sign up?",
+        "answer": "Sign up with social media (X, Facebook, LinkedIn), email, or Web3 wallet. Visit babelfish.app to get started."
+      },
+      "need_wallet": {
+        "question": "Do I need a Solana wallet?",
+        "answer": "No! We create one automatically if you sign up with social media or email. Connecting an existing wallet gives you full control over $BABEL tokens."
+      },
+      "set_language": {
+        "question": "How do I set my language?",
+        "answer": "Select your primary language from 100+ options during registration. Change anytime in settings."
+      },
+      "dont_speak_english": {
+        "question": "What if I don't speak English?",
+        "answer": "Babelfish supports 100+ languages with fully translated interface. Use the platform entirely in your native language."
+      },
+      "what_babel": {
+        "question": "What is $BABEL?",
+        "answer": "Utility token powering the Babelfish ecosystem. Built on Solana for governance, rewards, and premium features."
+      },
+      "earn_babel": {
+        "question": "How do I earn $BABEL?",
+        "answer": "Earn through invitations (10 $BABEL per invite), community participation, staking, and platform usage."
+      },
+      "buy_babel": {
+        "question": "Where can I buy $BABEL?",
+        "answer": "Available on Solana DEXes: Raydium (primary), Orca, Jupiter, and other Solana DEXes."
+      },
+      "use_babel": {
+        "question": "What can I do with $BABEL?",
+        "answer": "Vote in governance, access premium features, earn 8-12% APR through staking, and trade on DEXes."
+      },
+      "get_help": {
+        "title": "Get Help",
+        "discord": "Discord: discord.gg/babelfish",
+        "twitter": "X (Twitter): @BabelfishApp",
+        "email": "Email: support@babelfish.app"
+      },
+      "technical_info": {
+        "title": "Technical Info",
+        "built_on": "Built on Solana blockchain",
+        "encryption": "End-to-end encryption",
+        "browsers": "Works on all modern browsers",
+        "mobile": "Mobile apps coming Q3 2026"
+      },
+      "still_questions": "Still have questions?",
+      "join_discord": "Join our Discord",
+      "contact_support": "contact support"
+    }
   }
 }

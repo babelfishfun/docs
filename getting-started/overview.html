@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,12 @@
                 <img src="../assets/babelfish.svg" alt="Babelfish Logo">
                 Babelfish Docs
             </a>
-            <button class="theme-toggle">🌙 Dark</button>
+            <div class="language-selector">
+                <select id="language-select" aria-label="Select language">
+                    <option value="en">🇺🇸 English</option>
+                    <option value="th">🇹🇭 ไทย</option>
+                </select>
+            </div>
         </header>
 
         <!-- Sidebar -->
@@ -57,48 +62,48 @@
         <main class="docs-main">
             <div class="docs-content">
                 <div class="content">
-                    <h1>Getting Started with Babelfish</h1>
+                    <h1 data-translate="getting_started.overview.title">Getting Started with Babelfish</h1>
                     
-                    <p>Babelfish is a Web3 communication platform that dissolves language barriers through AI-powered translation. Inspired by the Babel fish from <em>The Hitchhiker's Guide to the Galaxy</em>, we enable seamless communication across 100+ languages.</p>
+                    <p data-translate="getting_started.overview.description">Babelfish is a Web3 communication platform that dissolves language barriers through AI-powered translation. Inspired by the Babel fish from <em>The Hitchhiker's Guide to the Galaxy</em>, we enable seamless communication across 100+ languages.</p>
 
-                    <h2>Key Features</h2>
+                    <h2 data-translate="getting_started.overview.key_features">Key Features</h2>
 
                     <div class="grid grid-2">
                         <div class="card">
-                            <h3>Universal Translation</h3>
-                            <p>Real-time AI translation for text, audio, and video across 100+ languages using xAI Grok API.</p>
+                            <h3 data-translate="getting_started.overview.universal_translation.title">Universal Translation</h3>
+                            <p data-translate="getting_started.overview.universal_translation.description">Real-time AI translation for text, audio, and video across 100+ languages using xAI Grok API.</p>
                         </div>
 
                         <div class="card">
-                            <h3>Flexible Identity</h3>
-                            <p>Connect via social media, email, or Web3 wallets. Set your primary language during onboarding.</p>
+                            <h3 data-translate="getting_started.overview.flexible_identity.title">Flexible Identity</h3>
+                            <p data-translate="getting_started.overview.flexible_identity.description">Connect via social media, email, or Web3 wallets. Set your primary language during onboarding.</p>
                         </div>
 
                         <div class="card">
-                            <h3>Communities</h3>
-                            <p>Join communities up to 200 members with automatic message translation and media sharing.</p>
+                            <h3 data-translate="getting_started.overview.communities.title">Communities</h3>
+                            <p data-translate="getting_started.overview.communities.description">Join communities up to 200 members with automatic message translation and media sharing.</p>
                         </div>
 
                         <div class="card">
-                            <h3>$BABEL Token</h3>
-                            <p>Earn rewards, participate in governance, and access premium features through Solana-based $BABEL tokens.</p>
+                            <h3 data-translate="getting_started.overview.babel_token.title">$BABEL Token</h3>
+                            <p data-translate="getting_started.overview.babel_token.description">Earn rewards, participate in governance, and access premium features through Solana-based $BABEL tokens.</p>
                         </div>
                     </div>
 
-                    <h2>Getting Started</h2>
+                    <h2 data-translate="getting_started.overview.getting_started">Getting Started</h2>
 
                     <div class="card">
                         <ol>
-                            <li><strong><a href="signup.html">Sign Up</a></strong>: Choose your preferred login method</li>
-                            <li><strong>Set Your Language</strong>: Select your primary language (100+ options)</li>
-                            <li><strong>Connect Wallet</strong>: Link a Solana wallet for $BABEL tokens</li>
-                            <li><strong>Join Communities</strong>: Find groups that interest you</li>
-                            <li><strong>Start Communicating</strong>: Send your first translated message!</li>
+                            <li><strong><a href="signup.html" data-translate="getting_started.overview.step1">Sign Up: Choose your preferred login method</a></strong></li>
+                            <li><strong data-translate="getting_started.overview.step2">Set Your Language: Select your primary language (100+ options)</strong></li>
+                            <li><strong data-translate="getting_started.overview.step3">Connect Wallet: Link a Solana wallet for $BABEL tokens</strong></li>
+                            <li><strong data-translate="getting_started.overview.step4">Join Communities: Find groups that interest you</strong></li>
+                            <li><strong data-translate="getting_started.overview.step5">Start Communicating: Send your first translated message!</strong></li>
                         </ol>
                     </div>
 
                     <div class="card">
-                        <p><strong>Ready to get started?</strong> <a href="signup.html" class="btn btn-primary">Sign up now</a> or check our <a href="faq.html">FAQ</a> for more information.</p>
+                        <p><strong data-translate="getting_started.overview.ready">Ready to get started?</strong> <a href="signup.html" class="btn btn-primary" data-translate="getting_started.overview.signup_button">Sign up now</a> or <a href="faq.html" data-translate="getting_started.overview.faq_link">check our FAQ</a> for more information.</p>
                     </div>
                 </div>
             </div>
@@ -106,6 +111,7 @@
     </div>
 
     <!-- Scripts -->
+    <script src="../assets/js/i18n.js"></script>
     <script src="../assets/js/theme.js"></script>
 </body>
 </html>
