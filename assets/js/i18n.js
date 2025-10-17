@@ -42,9 +42,6 @@ class I18n {
         // Update HTML lang attribute
         document.documentElement.lang = lang === 'th' ? 'th' : 'en';
         
-        // Update URL to reflect language
-        this.updateUrlForLanguage(lang);
-        
         // Apply translations
         this.translatePage();
     }
@@ -130,16 +127,13 @@ class I18n {
         // Load default language
         await this.loadLanguage(this.defaultLanguage);
         
-        // Check URL for language parameter
-        const urlLanguage = this.getLanguageFromUrl();
+        // Check for saved language preference
         const savedLanguage = localStorage.getItem('babelfish-docs-language');
         const browserLanguage = navigator.language.split('-')[0];
         
-        // Determine initial language (URL takes priority)
+        // Determine initial language
         let initialLanguage = this.defaultLanguage;
-        if (urlLanguage && (urlLanguage === 'en' || urlLanguage === 'th')) {
-            initialLanguage = urlLanguage;
-        } else if (savedLanguage && (savedLanguage === 'en' || savedLanguage === 'th')) {
+        if (savedLanguage && (savedLanguage === 'en' || savedLanguage === 'th')) {
             initialLanguage = savedLanguage;
         } else if (browserLanguage === 'th') {
             initialLanguage = 'th';
@@ -150,23 +144,6 @@ class I18n {
         
         // Setup language selector
         this.setupLanguageSelector();
-    }
-
-    getLanguageFromUrl() {
-        const path = window.location.pathname;
-        // Check for /en or /th in the URL
-        const match = path.match(/^\/(en|th)(\/|$)/);
-        return match ? match[1] : null;
-    }
-
-    updateUrlForLanguage(lang) {
-        const currentPath = window.location.pathname;
-        const basePath = currentPath.replace(/^\/(en|th)/, '');
-        const newPath = lang === 'en' ? basePath : `/${lang}${basePath}`;
-        
-        // Update URL without page reload
-        const newUrl = `${window.location.protocol}//${window.location.host}${newPath}${window.location.search}${window.location.hash}`;
-        window.history.replaceState({}, '', newUrl);
     }
 
     setupLanguageSelector() {
