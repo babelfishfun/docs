@@ -382,5 +382,109 @@
       "ready_future": "Ready to be part of the future?",
       "join_babelfish": "Join Babelfish today"
     }
+  },
+  "use_cases": {
+    "business": {
+      "title": "Business Use Cases",
+      "description": "Babelfish enables seamless communication across languages for businesses and teams worldwide.",
+      "enterprise_solutions": "Enterprise Solutions",
+      "global_teams": {
+        "title": "Global Teams",
+        "unified_communication": "Unified communication across countries and time zones",
+        "real_time_translation": "Real-time translation of messages and meetings",
+        "cultural_context": "Cultural context understanding for business terminology",
+        "project_management": "Integrated project management with translation"
+      },
+      "customer_support": {
+        "title": "Customer Support",
+        "multilingual_service": "Multilingual customer service in native languages",
+        "live_chat": "Live chat support with instant translation",
+        "translated_docs": "Translated documentation and knowledge bases",
+        "consistent_quality": "Consistent support quality across all languages"
+      },
+      "key_industries": "Key Industries",
+      "healthcare": {
+        "title": "Healthcare",
+        "patient_care": "Patient care in native languages",
+        "medical_research": "Medical research collaboration",
+        "emergency_response": "Emergency response communication",
+        "telemedicine": "International telemedicine"
+      },
+      "education": {
+        "title": "Education",
+        "corporate_training": "Multilingual corporate training",
+        "student_support": "International student support",
+        "learning_programs": "Cross-cultural learning programs",
+        "remote_education": "Remote education delivery"
+      },
+      "technology": {
+        "title": "Technology",
+        "dev_teams": "Global software development teams",
+        "customer_support": "International customer support",
+        "technical_docs": "Technical documentation translation",
+        "innovation": "Innovation collaboration"
+      },
+      "financial_services": {
+        "title": "Financial Services",
+        "cross_border": "Cross-border banking",
+        "client_communication": "International client communication",
+        "compliance": "Regulatory compliance across jurisdictions",
+        "investment_research": "Global investment research"
+      },
+      "implementation": "Implementation",
+      "assessment": "Assessment: Evaluate multilingual communication needs",
+      "pilot_program": "Pilot Program: Start with a small test group",
+      "training": "Training: Train teams on effective usage",
+      "integration": "Integration: Integrate into existing workflows",
+      "scaling": "Scaling: Expand across the organization",
+      "benefits": "Benefits",
+      "cost_savings": {
+        "title": "Cost Savings",
+        "reduced_translation": "Reduced translation costs",
+        "faster_communication": "Faster communication",
+        "operational_efficiency": "Improved operational efficiency",
+        "minimized_errors": "Minimized miscommunication errors"
+      },
+      "business_growth": {
+        "title": "Business Growth",
+        "market_expansion": "Global market expansion",
+        "customer_satisfaction": "Enhanced customer satisfaction",
+        "team_collaboration": "Better team collaboration",
+        "competitive_advantage": "Competitive advantage"
+      },
+      "ready_transform": "Ready to transform your business communication?",
+      "get_started": "Get started with Babelfish"
+    }
+  },
+  "about": {
+    "mission": {
+      "title": "Mission & Vision",
+      "description": "Our mission to dissolve Earth's linguistic barriers and prepare for interplanetary connectivity through universal translation and decentralized communication.",
+      "babel_fish_inspiration": "The Babel Fish Inspiration",
+      "inspired_description": "Inspired by Douglas Adams' The Hitchhiker's Guide to the Galaxy, Babelfish brings universal communication to life through AI-powered translation. Our platform serves as the digital equivalent of the Babel fish, making global communication effortless.",
+      "our_mission": "Our Mission",
+      "mission_statement": "To dissolve Earth's linguistic and cultural barriers, fostering seamless global connectivity through AI-powered translations, decentralized identities, and blockchain governance.",
+      "core_values": "Core Values",
+      "inclusivity": {
+        "title": "Inclusivity",
+        "description": "Breaking down barriers to connect everyone, everywhere."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Leveraging AI and Web3 for cutting-edge communication."
+      },
+      "decentralization": {
+        "title": "Decentralization",
+        "description": "Empowering users with control and community governance."
+      },
+      "global_impact": {
+        "title": "Global Impact",
+        "description": "Uniting humanity and preparing for future interstellar communication."
+      },
+      "our_vision": "Our Vision",
+      "vision_statement": "A future where language is no longer a barrier, and communication is truly universal. Babelfish aims to be the leading platform for cross-cultural interaction, enabling seamless dialogue from Earth to the cosmos.",
+      "join_building": "Join us in building the future of communication!",
+      "become_babelonian": "Become a Babelonian"
+    }
   }
 }
