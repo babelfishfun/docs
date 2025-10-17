@@ -163,4 +163,15 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+    
+    // Set last updated date
+    const lastUpdatedElement = document.getElementById('last-updated-date');
+    if (lastUpdatedElement) {
+        const lastUpdated = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        lastUpdatedElement.textContent = lastUpdated;
+    }
 });

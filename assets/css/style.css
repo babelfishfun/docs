@@ -514,6 +514,12 @@ a:hover {
   font-size: 0.875rem;
 }
 
+.docs-footer .last-updated {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .docs-sidebar {
