@@ -464,7 +464,7 @@
       },
       "how_signup": {
         "question": "How do I sign up?",
-        "answer": "Sign up with social media (X, Facebook, LinkedIn), email, or Web3 wallet. Visit babelfish.app to get started."
+        "answer": "Sign up with social media (X, Facebook, LinkedIn), email, or Web3 wallet. Visit babelfish.fun to get started."
       },
       "need_wallet": {
         "question": "Do I need a Solana wallet?",
@@ -498,7 +498,7 @@
         "title": "Get Help",
         "discord": "Discord: discord.gg/babelfish",
         "twitter": "X (Twitter): @BabelfishApp",
-        "email": "Email: support@babelfish.app"
+        "email": "Email: support@babelfish.fun"
       },
       "technical_info": {
         "title": "Technical Info",
@@ -662,14 +662,14 @@
       "quick_start": "Quick Start",
       "api_access": {
         "title": "API Access",
-        "base_url": "Base URL: https://api.babelfish.app/v1",
+        "base_url": "Base URL: https://api.babelfish.fun/v1",
         "authentication": "Authentication: API key required",
         "free_tier": "Free Tier: 1,000 requests/hour",
         "pro_tier": "Pro Tier: 10,000 requests/hour"
       },
       "get_api_key": {
         "title": "Get API Key",
-        "description": "Register at developer.babelfish.app to get your API key."
+        "description": "Register at developer.babelfish.fun to get your API key."
       },
       "authentication": "Authentication",
       "auth_description": "Include your API key in the Authorization header:",
@@ -708,9 +708,9 @@
       },
       "support": {
         "title": "Support",
-        "documentation": "Documentation: docs.babelfish.app/api",
+        "documentation": "Documentation: docs.babelfish.fun/api",
         "discord": "Discord: discord.gg/babelfish-dev",
-        "email": "Email: api-support@babelfish.app"
+        "email": "Email: api-support@babelfish.fun"
       },
       "ready_integrate": "Ready to integrate?",
       "get_api_key_button": "Get your API key",
