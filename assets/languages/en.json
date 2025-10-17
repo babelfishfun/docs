@@ -246,5 +246,34 @@
       "join_discord": "Join our Discord",
       "contact_support": "contact support"
     }
+  },
+  "token": {
+    "overview": {
+      "title": "$BABEL Token Overview",
+      "description": "$BABEL is the utility and governance token powering the Babelfish platform. Built on Solana, it enables community governance, rewards, and premium features.",
+      "token_utility": "Token Utility",
+      "governance": {
+        "title": "Governance",
+        "description": "Vote on platform features, partnerships, and treasury decisions through DAO governance."
+      },
+      "rewards": {
+        "title": "Rewards",
+        "description": "Earn 10 $BABEL per successful invite, plus community participation bonuses."
+      },
+      "premium_features": {
+        "title": "Premium Features",
+        "description": "Stake tokens for larger communities, priority translations, and custom themes."
+      },
+      "staking": {
+        "title": "Staking",
+        "description": "Earn 8-12% APR through staking and unlock premium platform features."
+      },
+      "tokenomics": "Tokenomics",
+      "total_supply": "Total Supply: 1,000,000,000 $BABEL (fixed supply)",
+      "distribution": "Distribution: 40% Community Rewards, 20% Team & Advisors, 15% Liquidity, 15% Marketing, 10% Treasury",
+      "ready_participate": "Ready to participate in the $BABEL economy?",
+      "signup_now": "Sign up now",
+      "start_earning": "and start earning rewards!"
+    }
   }
 }
