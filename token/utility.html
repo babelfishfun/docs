@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Utility - Babelfish Documentation</title>
+    <meta name="description" content="Learn about $BABEL token utility, governance, and incentives">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="docs-layout">
+        <!-- Header -->
+        <header class="docs-header">
+            <button class="mobile-menu-btn">☰</button>
+            <div class="header-left">
+                <a href="/" class="logo">
+                    <img src="../assets/babelfish.svg" alt="Babelfish Logo">
+                    <span>Babelfish</span>
+                </a>
+            </div>
+            <div class="header-right">
+                <div class="language-selector">
+                    <select id="language-select" aria-label="Select language">
+                        <option value="en">🇺🇸 English</option>
+                        <option value="th">🇹🇭 ไทย</option>
+                    </select>
+                </div>
+                <a href="https://github.com/babelfishfun/docs" target="_blank" class="github-link">GitHub</a>
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <nav class="docs-sidebar">
+            <h3 data-translate="nav.getting_started">Getting Started</h3>
+            <ul>
+                <li><a href="../getting-started/overview.html" data-translate="nav.overview">Overview</a></li>
+                <li><a href="../getting-started/signup.html" data-translate="nav.signup">Sign Up</a></li>
+                <li><a href="../getting-started/faq.html" data-translate="nav.faq">FAQ</a></li>
+            </ul>
+
+            <h3 data-translate="nav.token">Token</h3>
+            <ul>
+                <li><a href="whitepaper.html" data-translate="nav.whitepaper">Whitepaper</a></li>
+                <li><a href="utility.html" class="active" data-translate="nav.utility">Utility</a></li>
+                <li><a href="tokenomics.html" data-translate="nav.tokenomics">Tokenomics</a></li>
+            </ul>
+
+            <h3 data-translate="nav.developers">Developers</h3>
+            <ul>
+                <li><a href="../developers/api.html" data-translate="nav.api_reference">API Reference</a></li>
+            </ul>
+
+            <h3 data-translate="nav.resources">Resources</h3>
+            <ul>
+                <li><a href="../roadmap/overview.html" data-translate="nav.roadmap">Roadmap</a></li>
+                <li><a href="../use-cases/business.html" data-translate="nav.use_cases">Use Cases</a></li>
+                <li><a href="../about/mission.html" data-translate="nav.about">About</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="docs-main">
+            <div class="docs-content">
+                <div class="content">
+                    <h1 data-translate="token.utility.title">$BABEL Token Utility</h1>
+                    
+                    <p data-translate="token.utility.description">$BABEL is the utility and governance token powering the Babelfish platform. Built on Solana, it enables community governance, rewards, and premium features through a comprehensive ecosystem of incentives and utilities.</p>
+
+                    <h2 data-translate="token.utility.core_utilities">Core Utilities</h2>
+
+                    <div class="grid grid-2">
+                        <div class="card">
+                            <h3 data-translate="token.utility.governance.title">Governance</h3>
+                            <p data-translate="token.utility.governance.description">Stake $BABEL tokens to participate in decentralized governance of the platform. Vote on key decisions including:</p>
+                            <ul>
+                                <li data-translate="token.utility.governance.feature1">Platform feature development priorities</li>
+                                <li data-translate="token.utility.governance.feature2">Partnership and integration proposals</li>
+                                <li data-translate="token.utility.governance.feature3">Treasury allocation and spending</li>
+                                <li data-translate="token.utility.governance.feature4">Airdrop parameters and distribution</li>
+                                <li data-translate="token.utility.governance.feature5">Revenue model adjustments</li>
+                            </ul>
+                            <p data-translate="token.utility.governance.staking">Higher staking amounts provide increased voting power, ensuring that committed community members have greater influence over platform direction.</p>
+                        </div>
+
+                        <div class="card">
+                            <h3 data-translate="token.utility.incentives.title">Community Incentives</h3>
+                            <p data-translate="token.utility.incentives.description">Earn $BABEL through active participation in the Babelfish ecosystem:</p>
+                            <ul>
+                                <li data-translate="token.utility.incentives.feature1">Invite new users (10 $BABEL per successful invite)</li>
+                                <li data-translate="token.utility.incentives.feature2">Join and participate in communities</li>
+                                <li data-translate="token.utility.incentives.feature3">Engage with content (likes, comments, reposts)</li>
+                                <li data-translate="token.utility.incentives.feature4">Send translated messages</li>
+                                <li data-translate="token.utility.incentives.feature5">Participate in raids and contests</li>
+                            </ul>
+                            <p data-translate="token.utility.incentives.airdrop">Periodic airdrops from the community rewards pool (40% of total supply) are distributed based on engagement scores and activity levels.</p>
+                        </div>
+
+                        <div class="card">
+                            <h3 data-translate="token.utility.premium.title">Premium Features</h3>
+                            <p data-translate="token.utility.premium.description">Stake $BABEL to unlock enhanced platform features:</p>
+                            <ul>
+                                <li data-translate="token.utility.premium.feature1">Priority translation processing</li>
+                                <li data-translate="token.utility.premium.feature2">Custom themes and personalization</li>
+                                <li data-translate="token.utility.premium.feature3">Airdrop eligibility multipliers</li>
+                                <li data-translate="token.utility.premium.feature4">Advanced community analytics</li>
+                                <li data-translate="token.utility.premium.feature5">Custom community page features</li>
+                                <li data-translate="token.utility.premium.feature6">Extended media upload limits</li>
+                            </ul>
+                            <p data-translate="token.utility.premium.staking">Staking requirements scale with feature complexity, ensuring sustainable token utility while maintaining accessibility.</p>
+                        </div>
+
+                        <div class="card">
+                            <h3 data-translate="token.utility.integration.title">Project Integration</h3>
+                            <p data-translate="token.utility.integration.description">$BABEL serves as a gateway for Web3 project integrations:</p>
+                            <ul>
+                                <li data-translate="token.utility.integration.feature1">Community page hosting for token projects</li>
+                                <li data-translate="token.utility.integration.feature2">Custom airdrop facilitation</li>
+                                <li data-translate="token.utility.integration.feature3">Raid and contest hosting</li>
+                                <li data-translate="token.utility.integration.feature4">Cross-project collaboration tools</li>
+                                <li data-translate="token.utility.integration.feature5">Engagement-based reward distribution</li>
+                            </ul>
+                            <p data-translate="token.utility.integration.ecosystem">Projects can use their own tokens for rewards while leveraging $BABEL staking for enhanced engagement metrics and community building.</p>
+                        </div>
+                    </div>
+
+                    <h2 data-translate="token.utility.engagement_system">Engagement-Based Rewards</h2>
+                    
+                    <p data-translate="token.utility.engagement_description">Babelfish implements a sophisticated engagement scoring system that rewards genuine participation over spam, ensuring sustainable community growth:</p>
+
+                    <div class="card">
+                        <h3 data-translate="token.utility.scoring.title">Engagement Scoring</h3>
+                        <ul>
+                            <li data-translate="token.utility.scoring.feature1"><strong>Invites:</strong> 10 $BABEL per successful user invitation</li>
+                            <li data-translate="token.utility.scoring.feature2"><strong>Community Participation:</strong> Points for joining, posting, and engaging in communities</li>
+                            <li data-translate="token.utility.scoring.feature3"><strong>Content Engagement:</strong> Rewards for meaningful likes, comments, and reposts</li>
+                            <li data-translate="token.utility.scoring.feature4"><strong>Translation Usage:</strong> Points for sending translated messages and media</li>
+                            <li data-translate="token.utility.scoring.feature5"><strong>Raid Participation:</strong> Bonus rewards during time-bound engagement events</li>
+                            <li data-translate="token.utility.scoring.feature6"><strong>Staking Multipliers:</strong> Increased rewards for $BABEL stakers</li>
+                        </ul>
+                    </div>
+
+                    <h2 data-translate="token.utility.revenue_integration">Revenue Model Integration</h2>
+                    
+                    <p data-translate="token.utility.revenue_description">$BABEL integrates with the platform's hybrid revenue model, creating value through multiple streams:</p>
+
+                    <div class="grid grid-2">
+                        <div class="card">
+                            <h3 data-translate="token.utility.web3_revenue.title">Web3 Revenue Streams</h3>
+                            <ul>
+                                <li data-translate="token.utility.web3_revenue.feature1">Airdrop facilitation fees (USDC)</li>
+                                <li data-translate="token.utility.web3_revenue.feature2">Staking boost entry fees</li>
+                                <li data-translate="token.utility.web3_revenue.feature3">Partnership airdrop collaborations</li>
+                                <li data-translate="token.utility.web3_revenue.feature4">Community page hosting fees</li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <h3 data-translate="token.utility.web2_revenue.title">Web2/Enterprise Integration</h3>
+                            <ul>
+                                <li data-translate="token.utility.web2_revenue.feature1">Premium subscription benefits</li>
+                                <li data-translate="token.utility.web2_revenue.feature2">Enterprise feature access</li>
+                                <li data-translate="token.utility.web2_revenue.feature3">API usage credits</li>
+                                <li data-translate="token.utility.web2_revenue.feature4">Advertising revenue sharing</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2 data-translate="token.utility.future_utilities">Future Utilities</h2>
+                    
+                    <p data-translate="token.utility.future_description">As Babelfish evolves, $BABEL will gain additional utilities:</p>
+
+                    <div class="card">
+                        <ul>
+                            <li data-translate="token.utility.future.feature1"><strong>Mobile App Premium:</strong> Enhanced features in mobile applications</li>
+                            <li data-translate="token.utility.future.feature2"><strong>API Access:</strong> Priority access to translation APIs</li>
+                            <li data-translate="token.utility.future.feature3"><strong>White-Label Licensing:</strong> Discounts for enterprise deployments</li>
+                            <li data-translate="token.utility.future.feature4"><strong>Cross-Chain Integration:</strong> Bridge to other blockchain ecosystems</li>
+                            <li data-translate="token.utility.future.feature5"><strong>Advanced Analytics:</strong> Detailed engagement and performance metrics</li>
+                            <li data-translate="token.utility.future.feature6"><strong>NFT Integration:</strong> Community badges and achievements</li>
+                        </ul>
+                    </div>
+
+                    <h2 data-translate="token.utility.getting_started">Getting Started with $BABEL</h2>
+                    
+                    <div class="card">
+                        <h3 data-translate="token.utility.steps.title">How to Use $BABEL</h3>
+                        <ol>
+                            <li data-translate="token.utility.steps.step1">Acquire $BABEL tokens through DEX trading or community rewards</li>
+                            <li data-translate="token.utility.steps.step2">Stake tokens in the governance portal for voting rights</li>
+                            <li data-translate="token.utility.steps.step3">Participate actively in communities to earn rewards</li>
+                            <li data-translate="token.utility.steps.step4">Use earned tokens for premium features and enhanced benefits</li>
+                            <li data-translate="token.utility.steps.step5">Vote on governance proposals to shape platform development</li>
+                        </ol>
+                    </div>
+
+                    <div class="card">
+                        <h3 data-translate="token.utility.wallet.title">Wallet Integration</h3>
+                        <p data-translate="token.utility.wallet.description">Your Babelfish wallet sidebar displays:</p>
+                        <ul>
+                            <li data-translate="token.utility.wallet.feature1">$BABEL token balance</li>
+                            <li data-translate="token.utility.wallet.feature2">Current engagement score</li>
+                            <li data-translate="token.utility.wallet.feature3">Airdrop eligibility status</li>
+                            <li data-translate="token.utility.wallet.feature4">Staking rewards and multipliers</li>
+                            <li data-translate="token.utility.wallet.feature5">Invite statistics and bonuses</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/i18n.js"></script>
+    <script src="../assets/js/theme.js"></script>
+</body>
+</html>
