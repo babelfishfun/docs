@@ -8,11 +8,18 @@ class I18n {
 
     async loadLanguage(lang) {
         try {
-            const response = await fetch(`assets/languages/${lang}.json`);
+            // Determine the correct path based on current page location
+            const pathParts = window.location.pathname.split('/');
+            const isSubPage = pathParts.length > 2 && pathParts[pathParts.length - 1] !== '';
+            const basePath = isSubPage ? '../assets/languages/' : 'assets/languages/';
+            const fullPath = `${basePath}${lang}.json`;
+            console.log(`Loading language file: ${fullPath}`);
+            const response = await fetch(fullPath);
             if (!response.ok) {
-                throw new Error(`Failed to load language: ${lang}`);
+                throw new Error(`Failed to load language: ${lang} from ${fullPath}`);
             }
             this.translations[lang] = await response.json();
+            console.log(`Successfully loaded ${lang} translations:`, this.translations[lang]);
         } catch (error) {
             console.error(`Error loading language ${lang}:`, error);
             // Fallback to default language if available
@@ -42,6 +49,7 @@ class I18n {
 
     translatePage() {
         const elements = document.querySelectorAll('[data-translate]');
+        console.log(`Found ${elements.length} elements to translate`);
         
         elements.forEach(element => {
             const key = element.getAttribute('data-translate');
@@ -55,6 +63,9 @@ class I18n {
                 } else {
                     element.textContent = translation;
                 }
+                console.log(`Translated ${key}: ${translation}`);
+            } else {
+                console.warn(`No translation found for key: ${key}`);
             }
         });
         
