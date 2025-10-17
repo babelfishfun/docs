@@ -7,7 +7,16 @@
     <meta name="description" content="Comprehensive breakdown of the $BABEL token economy, distribution, and sustainability model.">
     
     <!-- Styles -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <style>
+            .tokenomics-chart {
+                height: 400px;
+                margin: 1rem 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -122,27 +131,11 @@
                         </div>
                     </div>
 
-                    <h2>Token Utility</h2>
-
-                    <div class="grid grid-2">
-                        <div class="card">
-                            <h3>Governance</h3>
-                            <p>Vote on platform features, partnerships, and treasury decisions through DAO governance.</p>
-                        </div>
-
-                        <div class="card">
-                            <h3>Rewards</h3>
-                            <p>Earn tokens through invitations, community participation, and platform usage.</p>
-                        </div>
-
-                        <div class="card">
-                            <h3>Premium Features</h3>
-                            <p>Access enhanced communities, priority translations, and custom themes through staking.</p>
-                        </div>
-
-                        <div class="card">
-                            <h3>Staking</h3>
-                            <p>Stake tokens for 8-12% APR rewards and unlock premium platform features.</p>
+                    <h2>Token Distribution</h2>
+                    
+                    <div class="card">
+                        <div class="tokenomics-chart">
+                            <canvas id="tokenomicsChart" width="400" height="400"></canvas>
                         </div>
                     </div>
 
@@ -158,7 +151,57 @@
     </div>
 
     <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../assets/js/i18n.js"></script>
     <script src="../assets/js/theme.js"></script>
+    <script>
+        // Create tokenomics pie chart
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('tokenomicsChart');
+            if (ctx) {
+                const chart = new Chart(ctx, {
+                    type: 'pie',
+                    data: {
+                        labels: ['Community Rewards (40%)', 'Team & Advisors (20%)', 'Liquidity (15%)', 'Marketing & Treasury (25%)'],
+                        datasets: [{
+                            data: [40, 20, 15, 25],
+                            backgroundColor: [
+                                '#55B6E4', // Primary blue
+                                '#FF6B6B', // Red
+                                '#4ECDC4', // Teal
+                                '#FFE66D'  // Yellow
+                            ],
+                            borderColor: '#ffffff',
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    padding: 20,
+                                    usePointStyle: true,
+                                    font: {
+                                        size: 14,
+                                        family: 'Plus Jakarta Sans'
+                                    }
+                                }
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        return context.label + ': ' + context.parsed + '%';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
