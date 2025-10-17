@@ -123,33 +123,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Add search functionality (simple implementation)
-    const searchInput = document.createElement('input');
-    searchInput.type = 'text';
-    searchInput.placeholder = 'Search documentation...';
-    searchInput.style.cssText = `
-        width: 100%;
-        padding: 0.75rem;
-        margin: 1rem 1.5rem;
-        border: 1px solid var(--border-light);
-        border-radius: 6px;
-        background: var(--bg-secondary);
-        color: var(--text-primary);
-        font-size: 0.875rem;
-    `;
-    
-    // Insert search at the top of sidebar
-    const sidebar = document.querySelector('.docs-sidebar');
-    if (sidebar) {
-        sidebar.insertBefore(searchInput, sidebar.firstChild);
-        
+    // Search functionality
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
         searchInput.addEventListener('input', function() {
             const searchTerm = this.value.toLowerCase();
-            const navLinks = sidebar.querySelectorAll('a');
+            const navLinks = document.querySelectorAll('.docs-sidebar a');
             
             navLinks.forEach(link => {
                 const text = link.textContent.toLowerCase();
-                const parentLi = link.parentElement;
+                const parentLi = link.closest('li');
                 
                 if (text.includes(searchTerm) || searchTerm === '') {
                     parentLi.style.display = 'block';
