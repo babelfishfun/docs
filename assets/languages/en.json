@@ -275,5 +275,67 @@
       "signup_now": "Sign up now",
       "start_earning": "and start earning rewards!"
     }
+  },
+  "developers": {
+    "api": {
+      "title": "Babelfish API Documentation",
+      "description": "Integrate Babelfish's universal translation services into your applications. Available Q1 2027.",
+      "quick_start": "Quick Start",
+      "api_access": {
+        "title": "API Access",
+        "base_url": "Base URL: https://api.babelfish.app/v1",
+        "authentication": "Authentication: API key required",
+        "free_tier": "Free Tier: 1,000 requests/hour",
+        "pro_tier": "Pro Tier: 10,000 requests/hour"
+      },
+      "get_api_key": {
+        "title": "Get API Key",
+        "description": "Register at developer.babelfish.app to get your API key."
+      },
+      "authentication": "Authentication",
+      "auth_description": "Include your API key in the Authorization header:",
+      "auth_example": "Authorization: Bearer YOUR_API_KEY",
+      "key_endpoints": "Key Endpoints",
+      "text_translation": {
+        "title": "Text Translation",
+        "endpoint": "POST /translate/text",
+        "description": "Translate text between languages with cultural context.",
+        "example": "{\n  \"text\": \"Hello, how are you?\",\n  \"source_language\": \"en\",\n  \"target_language\": \"es\"\n}"
+      },
+      "audio_translation": {
+        "title": "Audio Translation",
+        "endpoint": "POST /translate/audio",
+        "description": "Translate audio content with voice preservation.",
+        "example": "{\n  \"audio_url\": \"https://example.com/audio.mp3\",\n  \"source_language\": \"en\",\n  \"target_language\": \"fr\"\n}"
+      },
+      "community_management": {
+        "title": "Community Management",
+        "endpoint": "GET /communities",
+        "description": "List and manage communities with translation features.",
+        "example": "GET /communities?category=technology&limit=20"
+      },
+      "babel_token": {
+        "title": "$BABEL Token",
+        "endpoint": "GET /users/{id}/babel",
+        "description": "Get user's $BABEL token balance and rewards.",
+        "example": "{\n  \"balance\": {\n    \"total\": 1000.5,\n    \"staked\": 500.0,\n    \"available\": 500.5\n  }\n}"
+      },
+      "sdks_support": "SDKs & Support",
+      "official_sdks": {
+        "title": "Official SDKs",
+        "javascript": "JavaScript: npm install babelfish-sdk",
+        "python": "Python: pip install babelfish-sdk",
+        "go": "Go: go get github.com/babelfish/sdk-go"
+      },
+      "support": {
+        "title": "Support",
+        "documentation": "Documentation: docs.babelfish.app/api",
+        "discord": "Discord: discord.gg/babelfish-dev",
+        "email": "Email: api-support@babelfish.app"
+      },
+      "ready_integrate": "Ready to integrate?",
+      "get_api_key_button": "Get your API key",
+      "explore_sdks": "or explore our SDKs!"
+    }
   }
 }

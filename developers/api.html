@@ -62,41 +62,41 @@
         <main class="docs-main">
             <div class="docs-content">
                 <div class="content">
-                    <h1>Babelfish API Documentation</h1>
-                    
-                    <p>Integrate Babelfish's universal translation services into your applications. Available Q1 2027.</p>
+                        <h1 data-translate="developers.api.title">Babelfish API Documentation</h1>
+                        
+                        <p data-translate="developers.api.description">Integrate Babelfish's universal translation services into your applications. Available Q1 2027.</p>
 
-                    <h2>Quick Start</h2>
+                        <h2 data-translate="developers.api.quick_start">Quick Start</h2>
 
                     <div class="grid grid-2">
                         <div class="card">
-                            <h3>API Access</h3>
+                            <h3 data-translate="developers.api.api_access.title">API Access</h3>
                             <ul>
-                                <li><strong>Base URL</strong>: <code>https://api.babelfish.app/v1</code></li>
-                                <li><strong>Authentication</strong>: API key required</li>
-                                <li><strong>Free Tier</strong>: 1,000 requests/hour</li>
-                                <li><strong>Pro Tier</strong>: 10,000 requests/hour</li>
+                                <li><strong data-translate="developers.api.api_access.base_url">Base URL: https://api.babelfish.app/v1</strong></li>
+                                <li><strong data-translate="developers.api.api_access.authentication">Authentication: API key required</strong></li>
+                                <li><strong data-translate="developers.api.api_access.free_tier">Free Tier: 1,000 requests/hour</strong></li>
+                                <li><strong data-translate="developers.api.api_access.pro_tier">Pro Tier: 10,000 requests/hour</strong></li>
                             </ul>
                         </div>
 
                         <div class="card">
-                            <h3>Get API Key</h3>
-                            <p>Register at <a href="https://developer.babelfish.app">developer.babelfish.app</a> to get your API key.</p>
+                            <h3 data-translate="developers.api.get_api_key.title">Get API Key</h3>
+                            <p data-translate="developers.api.get_api_key.description">Register at <a href="https://developer.babelfish.app">developer.babelfish.app</a> to get your API key.</p>
                         </div>
                     </div>
 
-                    <h2>Authentication</h2>
+                    <h2 data-translate="developers.api.authentication">Authentication</h2>
 
-                    <p>Include your API key in the Authorization header:</p>
-                    <pre><code>Authorization: Bearer YOUR_API_KEY</code></pre>
+                    <p data-translate="developers.api.auth_description">Include your API key in the Authorization header:</p>
+                    <pre><code data-translate="developers.api.auth_example">Authorization: Bearer YOUR_API_KEY</code></pre>
 
-                    <h2>Key Endpoints</h2>
+                    <h2 data-translate="developers.api.key_endpoints">Key Endpoints</h2>
 
                     <div class="grid grid-2">
                         <div class="card">
-                            <h3>Text Translation</h3>
-                            <p><code>POST /translate/text</code></p>
-                            <p>Translate text between languages with cultural context.</p>
+                            <h3 data-translate="developers.api.text_translation.title">Text Translation</h3>
+                            <p><code data-translate="developers.api.text_translation.endpoint">POST /translate/text</code></p>
+                            <p data-translate="developers.api.text_translation.description">Translate text between languages with cultural context.</p>
                             <pre><code>{
   "text": "Hello, how are you?",
   "source_language": "en",
@@ -105,9 +105,9 @@
                         </div>
 
                         <div class="card">
-                            <h3>Audio Translation</h3>
-                            <p><code>POST /translate/audio</code></p>
-                            <p>Translate audio content with voice preservation.</p>
+                            <h3 data-translate="developers.api.audio_translation.title">Audio Translation</h3>
+                            <p><code data-translate="developers.api.audio_translation.endpoint">POST /translate/audio</code></p>
+                            <p data-translate="developers.api.audio_translation.description">Translate audio content with voice preservation.</p>
                             <pre><code>{
   "audio_url": "https://example.com/audio.mp3",
   "source_language": "en",
@@ -116,16 +116,16 @@
                         </div>
 
                         <div class="card">
-                            <h3>Community Management</h3>
-                            <p><code>GET /communities</code></p>
-                            <p>List and manage communities with translation features.</p>
+                            <h3 data-translate="developers.api.community_management.title">Community Management</h3>
+                            <p><code data-translate="developers.api.community_management.endpoint">GET /communities</code></p>
+                            <p data-translate="developers.api.community_management.description">List and manage communities with translation features.</p>
                             <pre><code>GET /communities?category=technology&limit=20</code></pre>
                         </div>
 
                         <div class="card">
-                            <h3>$BABEL Token</h3>
-                            <p><code>GET /users/{id}/babel</code></p>
-                            <p>Get user's $BABEL token balance and rewards.</p>
+                            <h3 data-translate="developers.api.babel_token.title">$BABEL Token</h3>
+                            <p><code data-translate="developers.api.babel_token.endpoint">GET /users/{id}/babel</code></p>
+                            <p data-translate="developers.api.babel_token.description">Get user's $BABEL token balance and rewards.</p>
                             <pre><code>{
   "balance": {
     "total": 1000.5,

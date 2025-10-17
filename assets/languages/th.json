@@ -275,5 +275,67 @@
       "signup_now": "สมัครสมาชิกตอนนี้",
       "start_earning": "และเริ่มรับรางวัล!"
     }
+  },
+  "developers": {
+    "api": {
+      "title": "เอกสาร API ของ Babelfish",
+      "description": "รวมบริการการแปลแบบสากลของ Babelfish เข้ากับแอปพลิเคชันของคุณ จะเปิดใช้งานใน Q1 2027",
+      "quick_start": "เริ่มต้นอย่างรวดเร็ว",
+      "api_access": {
+        "title": "การเข้าถึง API",
+        "base_url": "URL ฐาน: https://api.babelfish.app/v1",
+        "authentication": "การยืนยันตัวตน: ต้องใช้คีย์ API",
+        "free_tier": "ระดับฟรี: 1,000 คำขอ/ชั่วโมง",
+        "pro_tier": "ระดับ Pro: 10,000 คำขอ/ชั่วโมง"
+      },
+      "get_api_key": {
+        "title": "รับคีย์ API",
+        "description": "ลงทะเบียนที่ developer.babelfish.app เพื่อรับคีย์ API ของคุณ"
+      },
+      "authentication": "การยืนยันตัวตน",
+      "auth_description": "ใส่คีย์ API ของคุณในส่วนหัว Authorization:",
+      "auth_example": "Authorization: Bearer YOUR_API_KEY",
+      "key_endpoints": "จุดสิ้นสุดหลัก",
+      "text_translation": {
+        "title": "การแปลข้อความ",
+        "endpoint": "POST /translate/text",
+        "description": "แปลข้อความระหว่างภาษาพร้อมบริบททางวัฒนธรรม",
+        "example": "{\n  \"text\": \"Hello, how are you?\",\n  \"source_language\": \"en\",\n  \"target_language\": \"es\"\n}"
+      },
+      "audio_translation": {
+        "title": "การแปลเสียง",
+        "endpoint": "POST /translate/audio",
+        "description": "แปลเนื้อหาเสียงพร้อมการรักษาเสียง",
+        "example": "{\n  \"audio_url\": \"https://example.com/audio.mp3\",\n  \"source_language\": \"en\",\n  \"target_language\": \"fr\"\n}"
+      },
+      "community_management": {
+        "title": "การจัดการชุมชน",
+        "endpoint": "GET /communities",
+        "description": "แสดงรายการและจัดการชุมชนพร้อมคุณสมบัติการแปล",
+        "example": "GET /communities?category=technology&limit=20"
+      },
+      "babel_token": {
+        "title": "โทเค็น $BABEL",
+        "endpoint": "GET /users/{id}/babel",
+        "description": "รับยอดเงินโทเค็น $BABEL และรางวัลของผู้ใช้",
+        "example": "{\n  \"balance\": {\n    \"total\": 1000.5,\n    \"staked\": 500.0,\n    \"available\": 500.5\n  }\n}"
+      },
+      "sdks_support": "SDK และการสนับสนุน",
+      "official_sdks": {
+        "title": "SDK อย่างเป็นทางการ",
+        "javascript": "JavaScript: npm install babelfish-sdk",
+        "python": "Python: pip install babelfish-sdk",
+        "go": "Go: go get github.com/babelfish/sdk-go"
+      },
+      "support": {
+        "title": "การสนับสนุน",
+        "documentation": "เอกสาร: docs.babelfish.app/api",
+        "discord": "Discord: discord.gg/babelfish-dev",
+        "email": "อีเมล: api-support@babelfish.app"
+      },
+      "ready_integrate": "พร้อมรวมแล้วหรือยัง?",
+      "get_api_key_button": "รับคีย์ API ของคุณ",
+      "explore_sdks": "หรือสำรวจ SDK ของเรา!"
+    }
   }
 }
