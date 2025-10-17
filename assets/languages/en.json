@@ -337,5 +337,50 @@
       "get_api_key_button": "Get your API key",
       "explore_sdks": "or explore our SDKs!"
     }
+  },
+  "roadmap": {
+    "overview": {
+      "title": "Babelfish Roadmap",
+      "description": "Our journey from MVP to interplanetary communication platform.",
+      "q4_2025": "Q4 2025: MVP Launch",
+      "q1_2026": "Q1 2026: Bot Framework",
+      "q2_2026": "Q2 2026: Social Features",
+      "q3_2026": "Q3 2026: Mobile Apps",
+      "q4_2026": "Q4 2026: Desktop Client",
+      "q1_2027": "Q1 2027: API Release",
+      "future_vision": "Future Vision",
+      "mvp_features": {
+        "title": "Core Features",
+        "web_app": "Web application with responsive design",
+        "translation": "Universal translation via xAI Grok API",
+        "communities": "Communities up to 200 members",
+        "babel_integration": "$BABEL token integration"
+      },
+      "launch": {
+        "title": "Launch",
+        "announcement": "Community launch announcement",
+        "dex_listing": "$BABEL token on DEXes",
+        "partnerships": "Strategic partnerships",
+        "onboarding": "User onboarding guides"
+      },
+      "bot_framework": "Bot development platform and marketplace",
+      "enhanced_communities": "Enhanced community features and moderation",
+      "developer_ecosystem": "Developer ecosystem with SDK and documentation",
+      "social_features": "Public profiles and social feeds",
+      "content_discovery": "Enhanced content discovery",
+      "cross_cultural": "Cross-cultural content sharing",
+      "mobile_apps": "Native iOS and Android applications",
+      "push_notifications": "Push notifications and offline mode",
+      "voice_mode": "Voice mode and camera integration",
+      "desktop_apps": "Cross-platform desktop applications",
+      "multi_window": "Multi-window support and keyboard shortcuts",
+      "os_integration": "Native OS integration",
+      "api_platform": "Public API platform with SDKs",
+      "third_party": "Third-party integrations and white-label solutions",
+      "enterprise": "Enterprise features and support",
+      "advanced_ai": "Advanced AI features, global expansion, and preparation for interplanetary communication through space-ready infrastructure.",
+      "ready_future": "Ready to be part of the future?",
+      "join_babelfish": "Join Babelfish today"
+    }
   }
 }
