@@ -8,8 +8,10 @@ class I18n {
 
     async loadLanguage(lang) {
         try {
-            // Use absolute path from the root of the site
-            const fullPath = `/docs/assets/languages/${lang}.json`;
+            // Use relative path from the current script location
+            const scriptSrc = document.querySelector('script[src*="i18n.js"]').src;
+            const scriptPath = scriptSrc.substring(0, scriptSrc.lastIndexOf('/'));
+            const fullPath = `${scriptPath}/../languages/${lang}.json`;
             console.log(`Loading language file: ${fullPath}`);
             const response = await fetch(fullPath);
             if (!response.ok) {
