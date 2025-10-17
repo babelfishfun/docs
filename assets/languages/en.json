@@ -143,22 +143,51 @@
     },
     "signup": {
       "title": "Sign Up for Babelfish",
-      "description": "Join the universal communication revolution. Choose your preferred signup method and start connecting across languages.",
-      "signup_methods": "Signup Methods",
-      "social_login": {
-        "title": "Social Media Login",
-        "description": "Quick and easy signup using your existing social media accounts",
-        "platforms": "X (Twitter), Facebook, LinkedIn"
+      "description": "Welcome to Babelfish! This guide will walk you through the signup process and help you become a Babelonian.",
+      "signup_methods": "Sign Up Options",
+      "web3_wallet": {
+        "title": "🔗 Web3 Wallet",
+        "description": "Connect your Solana wallet for the full Web3 experience.",
+        "feature1": "Phantom, Solflare, or other Solana wallets",
+        "feature2": "Direct access to $BABEL tokens",
+        "feature3": "Full governance participation",
+        "feature4": "Secure, decentralized identity"
       },
-      "email_login": {
-        "title": "Email Signup",
-        "description": "Traditional email and password registration",
-        "features": "Full control over your account"
+      "social_media": {
+        "title": "🐦 Social Media",
+        "description": "Use your existing social media accounts for easy onboarding.",
+        "feature1": "X (Twitter) integration",
+        "feature2": "Facebook login",
+        "feature3": "LinkedIn connection",
+        "feature4": "Quick and familiar signup"
       },
-      "web3_login": {
-        "title": "Web3 Wallet",
-        "description": "Connect with your Solana wallet for full Web3 integration",
-        "features": "Direct $BABEL token access"
+      "email": {
+        "title": "📧 Email",
+        "description": "Traditional email signup for those who prefer it.",
+        "feature1": "Email and password",
+        "feature2": "Email verification",
+        "feature3": "Password recovery",
+        "feature4": "Familiar signup process"
+      },
+      "flexible_identity": {
+        "title": "🔑 Flexible Identity",
+        "description": "You can always connect additional identity methods later.",
+        "feature1": "Add wallet after email signup",
+        "feature2": "Link social accounts later",
+        "feature3": "Multiple identity methods",
+        "feature4": "Seamless account management"
+      },
+      "language_selection": {
+        "title": "Language Selection",
+        "description": "During signup, you'll be asked to select your primary language. This will be the language you see all translated content in. You can change this setting anytime in your profile.",
+        "supported_languages": {
+          "title": "Supported Languages",
+          "description": "Babelfish supports 100+ languages including:",
+          "list1": "English, Spanish, French, German, Italian",
+          "list2": "Chinese (Simplified & Traditional), Japanese, Korean",
+          "list3": "Arabic, Hindi, Portuguese, Russian",
+          "list4": "And many more regional languages"
+        }
       },
       "after_signup": "Getting Started After Signup",
       "socialize": {
@@ -248,6 +277,18 @@
     }
   },
   "token": {
+    "tokenomics": {
+      "title": "$BABEL Tokenomics",
+      "description": "$BABEL is the utility token powering the Babelfish ecosystem. Built on Solana, it enables governance, rewards, and premium features.",
+      "basics": {
+        "title": "Token Basics",
+        "symbol": "Symbol",
+        "blockchain": "Blockchain",
+        "total_supply": "Total Supply",
+        "contract_address": "Contract Address",
+        "contract_address_note": "To be announced at launch"
+      }
+    },
     "overview": {
       "title": "$BABEL Token Overview",
       "description": "$BABEL is the utility and governance token powering the Babelfish platform. Built on Solana, it enables community governance, rewards, and premium features.",
