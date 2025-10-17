@@ -57,39 +57,83 @@
     "new_users": {
       "title": "🚀 New Users",
       "description": "Get started with flexible logins and discover universal translation",
-      "button": "Get Started"
+      "get_started": "Get Started"
     },
     "token_holders": {
       "title": "💰 Token Holders",
       "description": "Learn about $BABEL utility, governance, and earning rewards",
-      "button": "Explore Token"
+      "explore_token": "Explore Token"
     },
     "developers": {
       "title": "👨‍💻 Developers",
       "description": "Build with our API, create bots, and integrate translations",
-      "button": "Developer Docs"
+      "developer_docs": "Developer Docs"
     }
   },
   "latest_updates": {
     "title": "Latest Updates",
     "mvp_launch": {
-      "title": "Q4 2025: MVP Launch 🎉",
-      "features": [
-        "Web app with flexible logins and universal translation",
-        "Telegram-like messaging with AI-powered translations",
-        "Communities up to 200 members with cross-language support",
-        "Advanced media handling (uploads and recordings)",
-        "$BABEL token integration for governance and rewards"
-      ]
+      "title": "Phase 1: MVP Launch 🎉",
+      "web_app": "Web app with flexible logins and universal translation",
+      "messaging": "Telegram-like messaging with AI-powered translations",
+      "communities": "Communities up to 200 members with cross-language support",
+      "media": "Advanced media handling (uploads and recordings)",
+      "token": "$BABEL token integration for governance and rewards"
     },
     "coming_soon": {
       "title": "Coming Soon",
-      "features": [
-        "Q1 2026: Bot framework for community automation",
-        "Q2 2026: Social media features (public pages, feeds, following)",
-        "Q3 2026: Mobile apps for iOS and Android",
-        "Q4 2026: Desktop client for seamless cross-platform access"
-      ]
+      "phase_2": "Phase 2: Bot framework for community automation",
+      "phase_3": "Phase 3: Social media features (public pages, feeds, following)",
+      "phase_4": "Phase 4: Mobile apps for iOS and Android",
+      "phase_5": "Phase 5: Desktop client for seamless cross-platform access"
+    }
+  },
+  "community": {
+    "title": "Join the Community",
+    "description": "Connect with Babelonians worldwide and stay updated on the latest developments.",
+    "twitter": {
+      "title": "🐦 X (Twitter)",
+      "description": "Follow us for updates and announcements",
+      "follow": "Follow @BabelfishApp"
+    },
+    "discord": {
+      "title": "💬 Discord",
+      "description": "Join our community for discussions and support",
+      "join": "Join Discord"
+    },
+    "email": {
+      "title": "📧 Email",
+      "description": "Get in touch for partnerships and support",
+      "contact": "Contact Us"
+    },
+    "website": {
+      "title": "🌐 Website",
+      "description": "Visit our main website for more information",
+      "visit": "Visit Website"
+    }
+  },
+  "vision": {
+    "title": "Vision Statement",
+    "quote": "In a universe of infinite voices, communication binds us. Babelfish creates a decentralized ecosystem where users connect effortlessly, regardless of background, fostering a community-driven future that bridges Web2 accessibility with Web3 innovation.",
+    "cta_text": "Ready to break down language barriers?",
+    "cta_button": "Start your journey as a Babelonian today"
+  },
+  "latest_updates": {
+    "title": "Latest Updates",
+    "mvp_launch": {
+      "title": "Phase 1: MVP Launch 🎉",
+      "web_app": "Web app with flexible logins and universal translation",
+      "messaging": "Telegram-like messaging with AI-powered translations",
+      "communities": "Communities up to 200 members with cross-language support",
+      "media": "Advanced media handling (uploads and recordings)",
+      "token": "$BABEL token integration for governance and rewards"
+    },
+    "coming_soon": {
+      "title": "Coming Soon",
+      "phase_2": "Phase 2: Bot framework for community automation",
+      "phase_3": "Phase 3: Social media features (public pages, feeds, following)",
+      "phase_4": "Phase 4: Mobile apps for iOS and Android",
+      "phase_5": "Phase 5: Desktop client for seamless cross-platform access"
     }
   },
   "community": {
