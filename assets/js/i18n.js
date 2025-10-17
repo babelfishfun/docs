@@ -97,15 +97,18 @@ class I18n {
     getTranslation(key) {
         const keys = key.split('.');
         let translation = this.translations[this.currentLanguage];
+        console.log(`Getting translation for key: ${key}, current language: ${this.currentLanguage}`);
         
         for (const k of keys) {
             if (translation && typeof translation === 'object') {
                 translation = translation[k];
             } else {
+                console.warn(`Translation not found for key: ${key} at step: ${k}`);
                 return null;
             }
         }
         
+        console.log(`Translation result for ${key}: ${translation}`);
         return translation;
     }
 
@@ -148,8 +151,10 @@ class I18n {
 
 // Initialize i18n when DOM is loaded
 document.addEventListener('DOMContentLoaded', async () => {
+    console.log('Initializing i18n system...');
     window.i18n = new I18n();
     await window.i18n.init();
+    console.log('i18n system initialized');
 });
 
 // Export for use in other scripts
