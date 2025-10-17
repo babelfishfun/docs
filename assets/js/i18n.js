@@ -8,11 +8,8 @@ class I18n {
 
     async loadLanguage(lang) {
         try {
-            // Determine the correct path based on current page location
-            const pathParts = window.location.pathname.split('/');
-            const isSubPage = pathParts.length > 2 && pathParts[pathParts.length - 1] !== '';
-            const basePath = isSubPage ? '../assets/languages/' : 'assets/languages/';
-            const fullPath = `${basePath}${lang}.json`;
+            // Use absolute path from the root of the site
+            const fullPath = `/docs/assets/languages/${lang}.json`;
             console.log(`Loading language file: ${fullPath}`);
             const response = await fetch(fullPath);
             if (!response.ok) {
